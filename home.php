@@ -38,7 +38,7 @@
                     information. The search is over. Their website is designed to be your one-stop shop for real estate
                     in
                     Washington.
-                </p>0
+                </p>
                 <p>This is the moment that you should enjoy the most; looking at the available properties in Washington;
                     imagining yourself living in the home that you have always dreamed about. You don't want just
                     another
@@ -55,14 +55,14 @@
             </div>
         </div>
     </div>
-    <div class="site-bg site-bg-grayscale site-bg-rgba">
+    <div class="site-bg main site-bg-grayscale site-bg-rgba">
         <canvas class="lazyload" width="1600" height="1002"
             data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/welcome-bg.jpg"></canvas>
     </div>
-    <!-- <div class="site-bg ">
+    <div class="site-bg bg-green">
         <canvas class="lazyload" width="1203" height="668"
             data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/welcome-accent.jpg"></canvas>
-    </div> -->
+    </div>
 </section>
 <!-- welcome end -->
 <!-- team -->
@@ -633,9 +633,9 @@
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
                         height="27" />
                     </em>
-                    <img alt="logo" class="img-responsive"
-                    src="<?php echo get_stylesheet_directory_uri() ?>/images/title-leaf.png" width="195" height="219" />
                 </div>
+                <img alt="logo" class="img-responsive"
+                src="<?php echo get_stylesheet_directory_uri() ?>/images/title-leaf.png" width="195" height="219" />
             </div>
         </div>
         <div class="news-gallery-image-container">
