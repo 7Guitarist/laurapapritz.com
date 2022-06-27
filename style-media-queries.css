@@ -16,17 +16,17 @@
 
   /*#region Welcome Region */
 
-  .region-welcome-container {
+  .welcome-content {
     display: grid;
-    max-width: 1312px;
+    max-width: 1395px;
     grid-template-columns: repeat(100, 1fr);
     margin: 0 auto;
   }
   .welcome-primary-section {
-    grid-column: 9/50;
+    grid-column: 1/57;
   }
   .welcome-secondary-section {
-    grid-column: 56/-1;
+    grid-column: 62/-10;
   }
 
   /*#endregion Welcome Region */
@@ -56,10 +56,11 @@
   .cta-gallery-image-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    max-width: 1250px;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
+    max-width: 1460px;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
     margin: 0 auto;
+    padding: 0 30px;
   }
 
   /*#endregion Cta Region */
@@ -69,9 +70,9 @@
   .news-gallery-image-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 1250px;
+    max-width: 1460px;
     grid-row-gap: 0px;
-    grid-column-gap: 10px;
+    grid-column-gap: 28px;
     margin: 0 auto;
   }
 

@@ -13,14 +13,14 @@
 </section>
 <!-- slideshow end -->
 <!-- welcome -->
-<section class="hp-welcome">
+<section class="hp-welcome"> 
     <div class="region-welcome-container">
         <div class="site-title">
             <img alt="logo" class="img-responsive"
                 src="<?php echo get_stylesheet_directory_uri() ?>/images/welcome-leaf.png" width="168" height="197" />
             <div class="site-title-group">
                 <span>About Us</span>
-                <em>Who we Are <img alt="logo" class="img-responsive"
+                <em>Who We Are <img alt="logo" class="img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
                         height="27" /></em>
             </div>
@@ -38,7 +38,7 @@
                     information. The search is over. Their website is designed to be your one-stop shop for real estate
                     in
                     Washington.
-                </p>
+                </p>0
                 <p>This is the moment that you should enjoy the most; looking at the available properties in Washington;
                     imagining yourself living in the home that you have always dreamed about. You don't want just
                     another
@@ -55,18 +55,18 @@
             </div>
         </div>
     </div>
-    <div class="site-bg">
+    <div class="site-bg site-bg-grayscale site-bg-rgba">
         <canvas class="lazyload" width="1600" height="1002"
             data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/welcome-bg.jpg"></canvas>
     </div>
-    <div class="site-bg">
+    <!-- <div class="site-bg ">
         <canvas class="lazyload" width="1203" height="668"
             data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/welcome-accent.jpg"></canvas>
-    </div>
+    </div> -->
 </section>
 <!-- welcome end -->
 <!-- team -->
-<section class="hp-team">
+<section class="hp-team"> 
     <div class="region-team-container">
         <div class="site-title">
             <img alt="logo" class="img-responsive"
@@ -207,7 +207,7 @@
             data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/team-accent.png"></canvas>
     </div>
 </section>
-<!-- team end -->
+<!-- team end -->_
 
 <!-- work -->
 <section class="hp-work">
@@ -253,7 +253,7 @@
         <canvas class="lazyload" width="651" height="652"
             data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/work-bg.jpg"></canvas>
     </div>
-    <div class="site-bg accent">
+    <div class="site-bg accent site-bg-grayscale">
         <canvas class="lazyload" width="1070" height="652"
             data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/work-accent.jpg"></canvas>
     </div>
@@ -299,7 +299,7 @@
                 <div class="communities-img canvas-wrapper">
                     <canvas width="370" height="370"></canvas>
                     <img alt="communities" class="img-communities canvas-img img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/communities-1.jpg" />
+                        src="<?php echo get_stylesheet_directory_uri() ?>/images/communities-2.jpg" />
                 </div>
                 <div class="communities-content">
                     <div class="communities-content-hover">
@@ -316,7 +316,7 @@
                 <div class="communities-img canvas-wrapper">
                     <canvas width="370" height="370"></canvas>
                     <img alt="communities" class="img-communities canvas-img img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/communities-1.jpg" />
+                        src="<?php echo get_stylesheet_directory_uri() ?>/images/communities-3.jpg" />
                 </div>
                 <div class="communities-content">
                     <div class="communities-content-hover">
@@ -333,7 +333,7 @@
                 <div class="communities-img canvas-wrapper">
                     <canvas width="370" height="370"></canvas>
                     <img alt="communities" class="img-communities canvas-img img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/communities-1.jpg" />
+                        src="<?php echo get_stylesheet_directory_uri() ?>/images/communities-4.jpg" />
                 </div>
                 <div class="communities-content">
                     <div class="communities-content-hover">
@@ -350,7 +350,7 @@
                 <div class="communities-img canvas-wrapper">
                     <canvas width="370" height="370"></canvas>
                     <img alt="communities" class="img-communities canvas-img img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/communities-1.jpg" />
+                        src="<?php echo get_stylesheet_directory_uri() ?>/images/communities-5.jpg" />
                 </div>
                 <div class="communities-content">
                     <div class="communities-content-hover">
@@ -367,7 +367,7 @@
                 <div class="communities-img canvas-wrapper">
                     <canvas width="370" height="370"></canvas>
                     <img alt="communities" class="img-communities canvas-img img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/communities-1.jpg" />
+                        src="<?php echo get_stylesheet_directory_uri() ?>/images/communities-6.jpg" />
                 </div>
                 <div class="communities-content">
                     <div class="communities-content-hover">
@@ -384,7 +384,7 @@
                 <div class="communities-img canvas-wrapper">
                     <canvas width="370" height="370"></canvas>
                     <img alt="communities" class="img-communities canvas-img img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/communities-1.jpg" />
+                        src="<?php echo get_stylesheet_directory_uri() ?>/images/communities-7.jpg" />
                 </div>
                 <div class="communities-content">
                     <div class="communities-content-hover">
@@ -401,7 +401,7 @@
                 <div class="communities-img canvas-wrapper">
                     <canvas width="370" height="370"></canvas>
                     <img alt="communities" class="img-communities canvas-img img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/communities-1.jpg" />
+                        src="<?php echo get_stylesheet_directory_uri() ?>/images/communities-8.jpg" />
                 </div>
                 <div class="communities-content">
                     <div class="communities-content-hover">
@@ -444,7 +444,7 @@
             </div>
         </div>
     </div>
-    <div class="site-bg">
+    <div class="site-bg site-bg-rgba">
         <canvas class="lazyload" width="1603" height="1216"
             data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/comnunities-bg.jpg"></canvas>
     </div>
@@ -577,7 +577,7 @@
             </div>
         </div>
     </div>
-    <div class="site-bg">
+    <div class="site-bg site-bg-rgba">
         <canvas class="lazyload" width="1600" height="573"
             data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/testi-bg.jpg"></canvas>
     </div>
@@ -788,7 +788,7 @@
         <canvas class="lazyload" width="123" height="131"
             data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/team-accent.png"></canvas>
     </div>
-    <div class="site-bg">
+    <div class="site-bg site-bg-rgba">
         <canvas class="lazyload" width="1600" height="668"
             data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/social-bg.png"></canvas>
     </div>
