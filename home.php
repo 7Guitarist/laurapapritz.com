@@ -279,7 +279,7 @@
         <div class="communities-slick">
             <a href="[blogurl]" aria-label="communities" class="communities-item">
                 <div class="communities-img canvas-wrapper">
-                    <canvas width="370" height="370"></canvas>
+                    <canvas width="476" height="333"></canvas>
                     <img alt="communities" class="img-communities canvas-img img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/communities-1.jpg" />
                 </div>
@@ -297,7 +297,7 @@
             </a>
             <a href="[blogurl]" aria-label="communities" class="communities-item">
                 <div class="communities-img canvas-wrapper">
-                    <canvas width="370" height="370"></canvas>
+                    <canvas width="424" height="282"></canvas>
                     <img alt="communities" class="img-communities canvas-img img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/communities-2.jpg" />
                 </div>
@@ -314,7 +314,7 @@
             </a>
             <a href="[blogurl]" aria-label="communities" class="communities-item">
                 <div class="communities-img canvas-wrapper">
-                    <canvas width="370" height="370"></canvas>
+                    <canvas width="458" height="283"></canvas>
                     <img alt="communities" class="img-communities canvas-img img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/communities-3.jpg" />
                 </div>
@@ -331,7 +331,7 @@
             </a>
             <a href="[blogurl]" aria-label="communities" class="communities-item">
                 <div class="communities-img canvas-wrapper">
-                    <canvas width="370" height="370"></canvas>
+                    <canvas width="442" height="295"></canvas>
                     <img alt="communities" class="img-communities canvas-img img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/communities-4.jpg" />
                 </div>
@@ -348,7 +348,7 @@
             </a>
             <a href="[blogurl]" aria-label="communities" class="communities-item">
                 <div class="communities-img canvas-wrapper">
-                    <canvas width="370" height="370"></canvas>
+                    <canvas width="380" height="285"></canvas>
                     <img alt="communities" class="img-communities canvas-img img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/communities-5.jpg" />
                 </div>
@@ -365,7 +365,7 @@
             </a>
             <a href="[blogurl]" aria-label="communities" class="communities-item">
                 <div class="communities-img canvas-wrapper">
-                    <canvas width="370" height="370"></canvas>
+                    <canvas width="442" height="296"></canvas>
                     <img alt="communities" class="img-communities canvas-img img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/communities-6.jpg" />
                 </div>
@@ -382,7 +382,7 @@
             </a>
             <a href="[blogurl]" aria-label="communities" class="communities-item">
                 <div class="communities-img canvas-wrapper">
-                    <canvas width="370" height="370"></canvas>
+                    <canvas width="501" height="282"></canvas>
                     <img alt="communities" class="img-communities canvas-img img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/communities-7.jpg" />
                 </div>
@@ -399,7 +399,7 @@
             </a>
             <a href="[blogurl]" aria-label="communities" class="communities-item">
                 <div class="communities-img canvas-wrapper">
-                    <canvas width="370" height="370"></canvas>
+                    <canvas width="421" height="279"></canvas>
                     <img alt="communities" class="img-communities canvas-img img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/communities-8.jpg" />
                 </div>
@@ -416,7 +416,7 @@
             </a>
             <a href="[blogurl]" aria-label="communities" class="communities-item">
                 <div class="communities-img canvas-wrapper">
-                    <canvas width="370" height="370"></canvas>
+                    <canvas width="476" height="333"></canvas>
                     <img alt="communities" class="img-communities canvas-img img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/communities-1.jpg" />
                 </div>
@@ -536,23 +536,26 @@
 <!-- testimonials -->
 <section class="hp-testimonials">
     <div class="region-testimonials-container">
-        <div class="site-title">
-            <span>What Are</span>
-            <em>Clients Says
-                <img alt="logo" class="img-responsive"
-                src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
-                height="27" />
-            </em>
-        </div>
+            <div class="site-title">
+                <div class="site-title-group">
+                    <span>What Are</span>
+                    <em>Clients Says
+                        <img alt="logo" class="img-responsive"
+                        src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
+                        height="27" />
+                    </em>
+                </div>
+            </div>
+        
             <span class="testi-top"> "Helped 500+ families just like yours"</span>
         <div class="testimonials-slick">
-            <div class="testimonials-content">
+            <div class="testimonials-content bg-orange">
                 <p>"We can't thank Laura enough for helping us find our dream home in Washington. It's exactly what we
                     dreamed it would be - and didn't go over our budget! Laura's local market knowledge..."</p>
                 <em>JANE DOE</em>
                 <span class="arrow-next"></span>
             </div>
-            <div class="testimonials-content">
+            <div class="testimonials-content bg-white">
                 <p>"At first I thought my property was ready to sell, Laura conviced me otherwise, and I'm really happy
                     that I listened. Without her help, I wouldn't have been able to sell my property for more..."
                 </p>
