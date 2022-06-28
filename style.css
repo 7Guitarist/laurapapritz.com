@@ -308,6 +308,10 @@ canvas.lazyloaded {
   transition: all 0.1s ease-in-out;
 }
 
+.site-btn:hover {
+  background: #e6c956;
+  color: #764d1c;
+}
 /* Pojo */
 
 body #pojo-a11y-toolbar {
@@ -779,6 +783,13 @@ header.header {
   font-weight: 400;
   color: #ffffff;
   position: relative;
+  font-style: normal;
+}
+.slideshow-content {
+  position: absolute;
+  bottom: 217px;
+  left: 200px;
+  font-family: "Merriweather", serif;
 }
 
 /*#endregion Slideshow Region */
@@ -1009,7 +1020,7 @@ header.header {
 /*#region Communities Region */
 
 .hp-communities {
-  padding: 30px 24px 30px 24px;
+  padding: 123px 30px;
 }
 .region-communities-container {
   position: relative;
@@ -1017,12 +1028,12 @@ header.header {
 }
 
 .hp-communities .communities-slick {
-  max-width: 1455px;
+  max-width: 1446px;
   margin: 0 auto;
 }
 
 .hp-communities .slick-list {
-  margin: -40px -45px 0;
+  margin: -100px -45px 0;
 }
 
 .hp-communities .slick-slide {
@@ -1030,7 +1041,7 @@ header.header {
 }
 
 .hp-communities .slick-track {
-  padding: 40px 0;
+  padding: 100px 0;
 }
 
 .hp-communities .slick-slide > div:not(:last-child) {
@@ -1065,15 +1076,6 @@ header.header {
   opacity: 0.7;
 }
 
-.hp-communities .communities-content {
-  position: absolute;
-  width: auto;
-  z-index: 4;
-
-  left: 30px;
-  bottom: 20px;
-}
-
 .hp-communities .communities-content h3 {
   font-size: 26px;
   letter-spacing: 0.1em;
@@ -1093,6 +1095,8 @@ header.header {
   background-color: rgba(1, 12, 19, 0.9);
 }
 .hp-communities .site-title .site-title-group em {
+  display: flex;
+  align-items: center;
   color: #e6c956;
 }
 .hp-communities .site-title .site-title-group span {
@@ -1101,16 +1105,22 @@ header.header {
 .hp-communities .site-title-group {
   display: grid;
   justify-content: start;
-}
+  align-items: center;
+margin-bottom: 75px;}
 img.img-communities.canvas-img.img-responsive {
   border-radius: 50%;
   /* height: 275px;
   width: 275px; */
 }
 
-.communities-img.canvas-wrapper {
+.communities-img {
   width: 285px;
   height: 275px;
+  margin: 0 auto;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .communities-img::before {
@@ -1122,26 +1132,108 @@ img.img-communities.canvas-img.img-responsive {
   right: -15px;
   bottom: -15px;
   z-index: 1;
+
+
+
+  border: 2px solid transparent;
+  border-image:linear-gradient(0deg, rgba(123,136,78,1) 0%, rgba(167,103,28,1) 100%);
+  border-image-slice: 1;
+  border-radius: 50%;
+}
+
+/*  */
+.communities-img {
+  aspect-ratio: 1;
+}
+
+.communities-img:before {
+  content:"";
+  position:absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(123,136,78,1) 0%, rgba(167,103,28,1) 100%);
+  border-image-slice: 1;
+  border-radius: 50%;
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+          mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+          top: -15px;
+          left: -15px;
+          right: -15px;
+          bottom: -15px;
+          -webkit-transition: all 0.4s ease-in-out;
+          -moz-transition: all 0.4s ease-in-out;
+          -o-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
+}
+.hp-communities .communities-item:hover .communities-img::before {
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+}
+.communities-content-hover{
+  transition: ease-in;
+}
+.hp-communities .communities-item:hover .communities-img {
+  transform: scale(1.4);
+}
+
+.communities-content-hover em {
+  font-family: var(--font-family-title);
+  color: #fbf0d2;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+  font-style: normal; 
+  text-align: center;
+  font-size: 31px;
+  opacity: 0;
+
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  border: 3px solid #857234;
-  border-radius: 50%;
+
+  margin-top: 24px;
+  display: block;
+}
+.communities-item:hover .communities-content-hover em{
+  opacity: 1;
+
 }
 
-.communities-content em {
-  font-size: 22px;
-  font-family: "Merriweather", serif;
+.communities-content > em {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
   color: #fbf0d2;
+  font-size: 22px;
   letter-spacing: 0.2em;
-  text-transform: uppercase;
+  font-family: var(--font-family-title);
   font-style: normal;
+  text-transform: uppercase;
+
+  width: 100%;text-align: center;
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
+.communities-item:hover .communities-content > em {
+  opacity: 0;
+}
+
 .communities-content span {
   font-size: 14px;
   font-family: "Source Sans Pro", sans-serif;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.5em;
   text-transform: uppercase;
   color: #975910;
   display: flex;
@@ -1152,11 +1244,41 @@ img.img-communities.canvas-img.img-responsive {
   background: #e6c956;
   margin: 6px 0;
   border-radius: 5px;
+  opacity: 0; 
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.communities-item:hover .communities-content span{
+  opacity: 1;
 }
 .hp-communities .site-title {
   display: flex;
   justify-content: flex-start;
 }
+
+
+.communities-content-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+img.communities-logo.img-responsive {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.communities-item:hover img.communities-logo.img-responsive{
+  opacity: .15;
+}
+
 
 /*#endregion Communities Region */
 
@@ -1262,7 +1384,7 @@ img.img-communities.canvas-img.img-responsive {
 /*#region Testimonial Region */
 
 .hp-testimonials {
-  padding: 30px 24px 30px 24px;
+  padding: 120px 24px 30px 24px;
 }
 .region-testimonials-container {
   max-width: 1173px;
@@ -1884,6 +2006,6 @@ img.canvas-img.img-responsive {
 
 /*#endregion Contact Region */
 
-header.header{
+/* header.header{
   display: none;
-}
+} */

@@ -290,9 +290,11 @@
                             height="175" />
                         <span>Current Listings</span>
                         <span>Market Reports</span>
+                        <em>Bellevue</em>
                     </div>
                     <em>Bellevue</em>
                 </div>
+                
 
             </a>
             <a href="[blogurl]" aria-label="communities" class="communities-item">
@@ -308,6 +310,7 @@
                             height="175" />
                         <span>Current Listings</span>
                         <span>Market Reports</span>
+                        <em>North Bend</em>
                     </div>
                     <em>North Bend</em>
                 </div>
@@ -325,6 +328,7 @@
                             height="175" />
                         <span>Current Listings</span>
                         <span>Market Reports</span>
+                        <em>Issaquah</em>
                     </div>
                     <em>Issaquah</em>
                 </div>
@@ -342,6 +346,7 @@
                             height="175" />
                         <span>Current Listings</span>
                         <span>Market Reports</span>
+                        <em>Renton</em>
                     </div>
                     <em>Renton</em>
                 </div>
@@ -359,6 +364,7 @@
                             height="175" />
                         <span>Current Listings</span>
                         <span>Market Reports</span>
+                        <em>Kent</em>
                     </div>
                     <em>Kent</em>
                 </div>
@@ -376,6 +382,7 @@
                             height="175" />
                         <span>Current Listings</span>
                         <span>Market Reports</span>
+                        <em>Sammamish</em>
                     </div>
                     <em>Sammamish</em>
                 </div>
@@ -393,6 +400,7 @@
                             height="175" />
                         <span>Current Listings</span>
                         <span>Market Reports</span>
+                        <em>Mapple <br> Valley</em>
                     </div>
                     <em>Mapple <br> Valley</em>
                 </div>
@@ -410,6 +418,7 @@
                             height="175" />
                         <span>Current Listings</span>
                         <span>Market Reports</span>
+                        <em>Snoqualmie</em>
                     </div>
                     <em>Snoqualmie</em>
                 </div>
@@ -427,6 +436,7 @@
                             height="175" />
                         <span>Current Listings</span>
                         <span>Market Reports</span>
+                        <em>Bellevue</em>
                     </div>
                     <em>Bellevue</em>
                 </div>

@@ -205,7 +205,12 @@
   /*#endregion Testimonial Region */
 
   /*#region Cta Region */
-
+  .cta-item.canvas-wrapper::after {
+    width: 350px;
+}
+.cta-item.canvas-wrapper em {
+  font-size: 55px;
+}
   /*#endregion Cta Region */
 
   /*#region News Region */
@@ -346,6 +351,11 @@
   }
   .hp-welcome .welcome-group {
     justify-content: center;
+}
+/* Cta Content */
+.cta-gallery-image-container {
+  display: flex;
+  flex-direction: column;
 }
   /*#region Header */
 
