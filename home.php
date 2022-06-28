@@ -20,9 +20,11 @@
                 src="<?php echo get_stylesheet_directory_uri() ?>/images/welcome-leaf.png" width="168" height="197" />
             <div class="site-title-group">
                 <span>About Us</span>
-                <em>Who We Are <img alt="logo" class="img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
-                        height="27" /></em>
+                <em>Who We Are <div class="site-line">
+                    <img alt="logo" class="img-responsive"
+                            src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
+                            height="27" />
+                </div></em>
             </div>
         </div>
         <div class="welcome-content">
@@ -39,18 +41,22 @@
                     in
                     Washington.
                 </p>
-                <p>This is the moment that you should enjoy the most; looking at the available properties in Washington;
+                <p class="welcome-text-last">This is the moment that you should enjoy the most; looking at the available properties in Washington;
                     imagining yourself living in the home that you have always dreamed about. You don't want just
                     another
                     database that gives you rehashed property descriptions.</p>
                 <em>Download the Compass Mobile App</em>
                 <div class="welcome-group">
-                    <img alt="agent" class="img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/welcome-appstore.png" width="168"
-                        height="56" />
-                    <img alt="agent" class="img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/welcome-google.png" width="168"
-                        height="56" />
+                    <a href="#" aria-label="download app">
+                        <img alt="agent" class="img-responsive"
+                            src="<?php echo get_stylesheet_directory_uri() ?>/images/welcome-appstore.png" width="168"
+                            height="56" />
+                    </a>
+                    <a href="#" aria-label="download app">
+                        <img alt="agent" class="img-responsive"
+                            src="<?php echo get_stylesheet_directory_uri() ?>/images/welcome-google.png" width="168"
+                            height="56" />
+                    </a>
                 </div>
             </div>
         </div>
@@ -91,9 +97,9 @@
                     <em>Laura Papritz</em>
                     <span>Managing Broker</span>
                 </div>
-                <div class="team-content hover">
-                    <span>Laura Papritz</span>
-                    <em>Managing Broker</em>
+                <div class="team-content-hover">
+                    <em>Laura Papritz</em>
+                    <span>Managing Broker</span>
                     <div class="team-contact-item">
                         <span class="ai-font-phone"></span>
                         <?php echo do_shortcode('[ai_phone href="+1.206.331.2927"] 206.331.2927[/ai_phone]')?>
@@ -112,7 +118,7 @@
                     <em>Nataly Yarina</em>
                     <span>Operations Manager</span>
                 </div>
-                <div class="team-content hover">
+                <div class="team-content-hover">
                     <em>Nataly Yarina</em>
                     <span>Operations Manager</span>
                     <div class="team-contact-item">
@@ -133,7 +139,7 @@
                     <em>Aaron Alan</em>
                     <span>Broker</span>
                 </div>
-                <div class="team-content hover">
+                <div class="team-content-hover">
                     <em>Aaron Alan</em>
                     <span>Broker</span>
                     <div class="team-contact-item">
@@ -154,7 +160,7 @@
                     <em>Krystle Alan</em>
                     <span>Broker</span>
                 </div>
-                <div class="team-content hover">
+                <div class="team-content-hover">
                     <em>Krystle Alan</em>
                     <span>Broker</span>
                     <div class="team-contact-item">
@@ -175,7 +181,7 @@
                     <em>Dane Andersen</em>
                     <span>Broker</span>
                 </div>
-                <div class="team-content hover">
+                <div class="team-content-hover">
                     <em>Dane Andersen</em>
                     <span>Broker</span>
                     <div class="team-contact-item">
@@ -202,7 +208,7 @@
         <canvas class="lazyload" width="1600" height="1058"
             data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/team-bg.jpg"></canvas>
     </div>
-    <div class="site-bg accent">
+    <div class="site-bg dot-accent">
         <canvas class="lazyload" width="123" height="131"
             data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/team-accent.png"></canvas>
     </div>
@@ -457,10 +463,13 @@
         <div class="site-title">
             <div class="site-title-group">
                 <span>Featured</span>
-                <em>Properties
+                <em><div class="site-line">
                     <img alt="logo" class="img-responsive"
                     src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
                     height="27" />
+                </div>
+                    Properties
+                    
                 </em>
             </div>
             <img alt="logo" class="img-responsive"
