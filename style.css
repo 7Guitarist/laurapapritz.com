@@ -1,5 +1,5 @@
 /*
-Theme Name: isdtemplate.com
+Theme Name: Laura Pritz
 Description: AIOS mobile semi-custom theme.
 Author: AgentImage
 Author URI: http://www.agentimage.com
@@ -220,10 +220,23 @@ canvas {
 }
 
 /* Site title primary */
+.site-line{
+  position: relative;
+}
+.site-line::before {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  background: #e6c956;
+  height: 1px;
+  width: 3333px;
+}
 .site-title .site-title-group span {
   font-size: 22px;
-  font-weight: 400;
-  font-family: "Source Sans Pro", sans-serif;
   color: #000000;
   text-transform: uppercase;
   position: relative;
@@ -231,12 +244,21 @@ canvas {
 }
 .site-title .site-title-group em {
   font-size: 85px;
-  font-family: "Merriweather", serif;
+  font-family: var(--font-family-title);
   font-style: normal;
-  font-weight: 400;
   color: #55602e;
   position: relative;
   letter-spacing: 0.028em;
+}
+
+.site-title-group em {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+
+.site-title > img {
+  opacity: .15;
 }
 /* Backgrouund */
 .site-bg canvas {
@@ -247,6 +269,7 @@ canvas {
   height: 100%;
   pointer-events: none;
   z-index: -1;
+  background-size: cover;
 }
 
 .site-bg-accent canvas {
@@ -283,7 +306,6 @@ canvas.lazyloaded {
 .site-btn {
   color: #975910;
   border: 1px solid #e6c956;
-  font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.5em;
@@ -780,7 +802,6 @@ header.header {
 }
 .hp-slideshow .slideshow-content em {
   font-size: 85px;
-  font-weight: 400;
   color: #ffffff;
   position: relative;
   font-style: normal;
@@ -797,7 +818,11 @@ header.header {
 /*#region Welcome Region */
 
 .hp-welcome {
-  padding: 30px 30px 32px ;
+  padding: 119px 30px 32px ;
+}
+
+.hp-welcome .site-line::before {
+  left: 27px;
 }
 .region-welcome-container {
   position: relative;
@@ -830,15 +855,17 @@ header.header {
   height: 100%;
   z-index: -2;
 }
-.welcome-content p {
+.welcome-secondary-section p {
   font-size: 18px;
-  font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   color: #ffffff;
   letter-spacing: 0.025em;
   line-height: 25px;
-  margin-bottom: 42px;
+  margin-bottom: 31px;
   max-width: 483px;
+}
+.welcome-secondary-section .welcome-text-last {
+  margin-bottom: 41px;
 }
 .hp-welcome .site-title-group {
   display: grid;
@@ -847,10 +874,11 @@ header.header {
 .hp-welcome .site-title {
   display: flex;
   justify-content: center;
+  gap: 50px;
 }
 .hp-welcome .welcome-secondary-section em{
   font-size: 30px;
-  font-family: "Merriweather", serif;
+  font-family: var(--font-family-title);
   color: #fbf0d2;
   letter-spacing: 0.025em;
   line-height: 27.98px;
@@ -877,7 +905,7 @@ header.header {
 /*#region Team Region */
 
 .hp-team {
-  padding: 30px 24px 30px 24px;
+  padding: 119px 24px 200px 24px;
 }
 
 .hp-team .team-slick {
@@ -896,7 +924,12 @@ header.header {
 .hp-team .slick-slide > div:not(:last-child) {
   margin-bottom: 0px;
 }
-
+.hp-team  .slick-current + .slick-slide{
+  padding-top: 98px;
+}
+.hp-team  .slick-current + .slick-slide + .slick-slide + .slick-slide{
+  padding-top: 98px;
+}
 .hp-team .team-item {
   position: relative;
   display: block !important;
@@ -943,35 +976,81 @@ header.header {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-
+.hp-team .team-content-hover a {
+  width: 283px;
+  height: 70px;
+}
+.hp-team .team-content-hover > em {
+  font-size: 30px;
+  font-style: normal;
+  font-family: var(--font-family-title);
+  letter-spacing: .075em;
+  color: #ffffff;
+  padding-left: 28px;
+}
+.hp-team .team-content-hover > span{
+  font-size: 14px;
+  color: #fbf0d2;
+  letter-spacing: .075em;
+  padding-left: 28px;
+}
+.hp-team .team-contact-item {
+  display: flex;
+  padding-left: 28px;
+}
+.hp-team .team-contact-item em {
+  font-size: 18px;
+  color: #fbf0d2;
+  letter-spacing: 0.050em;
+}
+.hp-team .team-contact-item span{
+  color: #e5c855;
+}
+.hp-team .team-content-hover span {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  padding-top: 6px;
+}
+.hp-team .team-content-hover .site-btn {
+  width: 283px;
+  height: 70px;
+  background-color: #e6c956;
+  font-size: 14px;
+  font-weight: 600;
+  color: #975910;
+  letter-spacing: .50em;
+}
+.hp-team .team-content-hover{
+  opacity: 0;
+}
 .hp-team .team-item:hover .team-img::before {
   opacity: 1;
 }
-
 .hp-team .team-content {
-  position: absolute;
-  width: auto;
-  z-index: 4;
-
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 33px 28px;
 }
+.hp-team  .team-content em{
+  font-size: 30px;
+  font-family: var(--font-family-title);
+  color: #975910;
+  letter-spacing: 00.025em;
+  font-style: normal;
+  margin-bottom: 9px;
 
-.hp-team .team-content h3 {
-  font-size: 26px;
-  letter-spacing: 0.1em;
-  font-weight: 700;
-  color: #ffc000;
+}
+.hp-team  .team-content span{
+  font-size: 14px;
+  color: #000000;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  letter-spacing: .075em;
 }
-
-.hp-team .team-content p {
-  font-size: 15px;
-  color: #ffc000;
-  letter-spacing: 0.1em;
-  margin-bottom: 10px;
+a.team-img.canvas-wrapper {
+  display: block;
 }
 .hp-team .site-title .site-title-group em {
   color: #975910;
@@ -983,6 +1062,86 @@ header.header {
 .hp-team  .site-title {
   display: flex;
   justify-content: flex-start;
+}
+.hp-team .site-play-btn{
+  align-items: center;
+  cursor: pointer;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  color: #fff;
+  display: flex;
+  font-size: 20px;
+  height: 85px;
+  justify-content: center;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 85px;
+  z-index: 2;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+}
+.hp-team .team-item:hover .site-play-btn{
+  opacity: 1;
+}
+.hp-team .site-play-btn::after{
+  content: "";
+  align-items: center;
+  cursor: pointer;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  color: #fff;
+  display: flex;
+  font-size: 20px;
+  height: 95px;
+  justify-content: center;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 95px;
+  z-index: 2;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  opacity: .2;
+}
+.hp-team .team-content::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  bottom: -7px;
+  width: 1px;
+  height: 450px;
+  background: #e6c956
+}
+.hp-team .team-item:hover .team-content-hover{
+  opacity: 1;
+  
+}
+.hp-team .team-content-hover {
+  opacity: 0;
+  position: absolute;
+  bottom: -65px;
+  left: 0;
+  background: #975910;
+  padding-top: 30px;
+  z-index: 3;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.hp-team .site-bg.dot-accent{
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 /*#endregion Team Region */
 
@@ -1020,7 +1179,11 @@ header.header {
 /*#region Communities Region */
 
 .hp-communities {
+<<<<<<< HEAD
   padding: 123px 30px;
+=======
+  padding: 119px 24px 30px 24px;
+>>>>>>> 997624ae615df3ea686c15af7043b916f4654ab8
 }
 .region-communities-container {
   position: relative;
@@ -1207,11 +1370,17 @@ img.img-communities.canvas-img.img-responsive {
 
 }
 
+<<<<<<< HEAD
 .communities-content > em {
   position: absolute;
   bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
+=======
+.communities-content em {
+  font-size: 22px;
+  font-family: var(--font-family-title);
+>>>>>>> 997624ae615df3ea686c15af7043b916f4654ab8
   color: #fbf0d2;
   font-size: 22px;
   letter-spacing: 0.2em;
@@ -1232,8 +1401,12 @@ img.img-communities.canvas-img.img-responsive {
 
 .communities-content span {
   font-size: 14px;
+<<<<<<< HEAD
   font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 0.5em;
+=======
+  letter-spacing: 0.05em;
+>>>>>>> 997624ae615df3ea686c15af7043b916f4654ab8
   text-transform: uppercase;
   color: #975910;
   display: flex;
@@ -1259,6 +1432,7 @@ img.img-communities.canvas-img.img-responsive {
   justify-content: flex-start;
 }
 
+<<<<<<< HEAD
 
 .communities-content-hover {
   position: absolute;
@@ -1280,13 +1454,36 @@ img.communities-logo.img-responsive {
 }
 
 
+=======
+.communities-item .communities-content {
+  opacity: 0;
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.communities-item:hover .communities-content > em {
+  opacity: 0;
+}
+
+.communities-item:hover .communities-content {
+opacity: 1;
+}
+
+>>>>>>> 997624ae615df3ea686c15af7043b916f4654ab8
 /*#endregion Communities Region */
 
 /*#region Properties Region */
 
 .hp-properties {
-  padding: 30px 24px 30px 24px;
+  padding: 119px 24px 30px 24px;
   position: relative;
+}
+
+.hp-properties .site-line::before  {
+  right: 26px;
 }
 
 .hp-properties .properties-slick {
@@ -1298,7 +1495,7 @@ img.communities-logo.img-responsive {
   margin: 0 -7px;
 }
 
-.hp-properties .slick-slide {
+.hp-properties .slick-slide{ 
   margin: 0 7px;
 }
 
@@ -1353,10 +1550,24 @@ img.communities-logo.img-responsive {
 }
 
 .hp-properties .properties-content p {
-  font-size: 15px;
-  color: #ffc000;
-  letter-spacing: 0.1em;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 32px;
   margin-bottom: 10px;
+  text-align: center;
+}
+.hp-properties .properties-content em{
+  font-size: 40px;
+  font-family: var(--font-family-title);
+  text-align: center;
+  color: #ffffff;
+  letter-spacing:.10em;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+}
+.hp-properties .properties-content .site-btn {
+  width: 264px;
 }
 /* .hp-properties .img-responsive {
   position: absolute;
@@ -1378,13 +1589,23 @@ img.communities-logo.img-responsive {
   display: flex;
   justify-content: end;
 }
+ img.properties-logo {
+  position: absolute;
+  top: -104px;
+  left: -24px;
+  opacity: .15;
+}
 
 /*#endregion Properties Region */
 
 /*#region Testimonial Region */
 
 .hp-testimonials {
+<<<<<<< HEAD
   padding: 120px 24px 30px 24px;
+=======
+  padding: 119px 24px 30px 24px;
+>>>>>>> 997624ae615df3ea686c15af7043b916f4654ab8
 }
 .region-testimonials-container {
   max-width: 1173px;
@@ -1427,7 +1648,7 @@ img.communities-logo.img-responsive {
 }
 .hp-testimonials .testi-top {
   font-size: 40px;
-  font-family: "Merriweather", serif;
+  font-family: var(--font-family-title);
   font-style: italic;
   color: #ffffff;
   font-weight: 300;
@@ -1439,16 +1660,14 @@ img.communities-logo.img-responsive {
 }
 .hp-testimonials .testimonials-content p{
   font-size: 17px;
-  font-family: "Source Sans Pro", sans-serif;;
   color: #fbf0d2;
-  font-weight: 400;
   letter-spacing: 0.05em;
   text-align: start;
   line-height: 1.64;
 }
 .testimonials-content em {
   font-size: 18px;
-  font-family: "Merriweather", serif;
+  font-family: var(--font-family-title);
   letter-spacing: .25em;
   font-style: normal;
   color: #fbf0d2;
@@ -1561,7 +1780,7 @@ img.communities-logo.img-responsive {
 /*#region Cta Region */
 
 .hp-cta {
-  padding: 30px 24px 30px 24px;
+  padding: 119px 24px 30px 24px;
 }
 .cta-image {
   position: relative;
@@ -1623,7 +1842,7 @@ img.communities-logo.img-responsive {
   position: absolute;
   font-size: 65px;
   color: #ffffff;
-  font-family: "Merriweather", serif;
+  font-family: var(--font-family-title);
   font-style: normal;
   bottom: 105px;
   left: 56px;
@@ -1652,9 +1871,9 @@ img.canvas-img.img-responsive {
 
 /*#region News Region */
 
-/* .hp-news {
-  padding: 30px 24px 30px 24px;
-} */
+.hp-news {
+  padding: 51px 24px 30px 24px;
+}
 .news-gallery-image-container {
   padding: 75px 0px 0px;
 }
@@ -1745,7 +1964,7 @@ img.canvas-img.img-responsive {
   position: relative;
   font-size: 26px;
   color: #ffffff;
-  font-family: "Merriweather", serif;
+  font-family: var(--font-family-title);
   font-style: normal;
   bottom: 30px;
   left: 40px;
@@ -1865,7 +2084,7 @@ img.canvas-img.img-responsive {
 /*#region Social Region */
 
 .hp-social {
-  padding: 30px 24px 30px 24px;
+  padding: 56px 24px 30px 24px;
 }
 .region-social-container {
   position: relative;
