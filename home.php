@@ -583,9 +583,11 @@
             <div class="site-title-group">
                 <span>What Are</span>
                 <em>Clients Says
-                    <img alt="logo" class="img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
-                        height="27" />
+                    <div class="site-line">
+                        <img alt="logo" class="img-responsive"
+                            src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
+                            height="27" />
+                    </div>
                 </em>
             </div>
         </div>
@@ -612,13 +614,13 @@
                     magicians, they made all of our
                     Washington real estate dreams
                     come true. Aside from being...</p>
-                <em>JANE DOE</em>
+                <em>CLAIRE DOE</em>
                 <span class="arrow-next"></span>
             </div>
             <div class="testimonials-content">
                 <p>"We can't thank Laura enough for helping us find our dream home in Washington. It's exactly what we
                     dreamed it would be - and didn't go over our budget! Laura's local market knowledge..."</p>
-                <em>CLAIRE DOE</em>
+                <em>JANE DOE</em>
                 <span class="arrow-next"></span>
             </div>
         </div>
