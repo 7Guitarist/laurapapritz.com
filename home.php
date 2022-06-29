@@ -13,7 +13,7 @@
 </section>
 <!-- slideshow end -->
 <!-- welcome -->
-<section class="hp-welcome"> 
+<section class="hp-welcome">
     <div class="region-welcome-container">
         <div class="site-title">
             <img alt="logo" class="img-responsive"
@@ -21,10 +21,10 @@
             <div class="site-title-group">
                 <span>About Us</span>
                 <em>Who We Are <div class="site-line">
-                    <img alt="logo" class="img-responsive"
+                        <img alt="logo" class="img-responsive"
                             src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
                             height="27" />
-                </div></em>
+                    </div></em>
             </div>
         </div>
         <div class="welcome-content">
@@ -41,7 +41,8 @@
                     in
                     Washington.
                 </p>
-                <p class="welcome-text-last">This is the moment that you should enjoy the most; looking at the available properties in Washington;
+                <p class="welcome-text-last">This is the moment that you should enjoy the most; looking at the available
+                    properties in Washington;
                     imagining yourself living in the home that you have always dreamed about. You don't want just
                     another
                     database that gives you rehashed property descriptions.</p>
@@ -72,7 +73,7 @@
 </section>
 <!-- welcome end -->
 <!-- team -->
-<section class="hp-team"> 
+<section class="hp-team">
     <div class="region-team-container">
         <div class="site-title">
             <img alt="logo" class="img-responsive"
@@ -300,7 +301,7 @@
                     </div>
                     <em>Bellevue</em>
                 </div>
-                
+
 
             </a>
             <a href="[blogurl]" aria-label="communities" class="communities-item">
@@ -473,17 +474,18 @@
         <div class="site-title">
             <div class="site-title-group">
                 <span>Featured</span>
-                <em><div class="site-line">
-                    <img alt="logo" class="img-responsive"
-                    src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
-                    height="27" />
-                </div>
+                <em>
+                    <div class="site-line">
+                        <img alt="logo" class="img-responsive"
+                            src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
+                            height="27" />
+                    </div>
                     Properties
-                    
+
                 </em>
             </div>
             <img alt="logo" class="img-responsive"
-            src="<?php echo get_stylesheet_directory_uri() ?>/images/title-leaf.png" width="195" height="219" />
+                src="<?php echo get_stylesheet_directory_uri() ?>/images/title-leaf.png" width="195" height="219" />
         </div>
         <div class="properties-slick">
             <a href="[blogurl]" aria-label="properties" class="properties-item">
@@ -498,7 +500,7 @@
                         height="370" />
                     <em>$17,200,000</em>
                     <p>1450 Maple Valley <br> Washington 98038, USA</p>
-                     <span class="site-btn">View Details</span>
+                    <span class="site-btn">View Details</span>
                 </div>
             </a>
             <a href="[blogurl]" aria-label="properties" class="properties-item">
@@ -513,7 +515,7 @@
                         height="370" />
                     <em>$17,200,000</em>
                     <p>1450 Maple Valley <br> Washington 98038, USA</p>
-                     <span class="site-btn">View Details</span>
+                    <span class="site-btn">View Details</span>
                 </div>
             </a>
             <a href="[blogurl]" aria-label="properties" class="properties-item">
@@ -528,45 +530,45 @@
                         height="321" />
                     <em>$17,200,000</em>
                     <p>1450 Maple Valley <br> Washington 98038, USA</p>
-                     <span class="site-btn">View Details</span>
+                    <span class="site-btn">View Details</span>
                 </div>
             </a>
         </div>
-       
-   
-    <div class="properties-slick-arrow">
-        <!-- <span class="ai-font-arrow-h-p prev"></span> -->
-        <a href="[blogurl]" class="site-btn" aria-label="VIEW ALL properties">VIEW ALL properties</a>
-        <span class="ai-font-arrow-h-n next"></span>
-    </div>
-</div>
 
-<div class="site-bg">
-    <canvas class="lazyload" width="1600" height="1078"
-        data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/properties-bg.jpg"></canvas>
-</div>
-<div class="site-bg accent">
-    <canvas class="lazyload" width="123" height="131"
-        data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/team-accent.png"></canvas>
-</div>
+
+        <div class="properties-slick-arrow">
+            <!-- <span class="ai-font-arrow-h-p prev"></span> -->
+            <a href="[blogurl]" class="site-btn" aria-label="VIEW ALL properties">VIEW ALL properties</a>
+            <span class="ai-font-arrow-h-n next"></span>
+        </div>
+    </div>
+
+    <div class="site-bg">
+        <canvas class="lazyload" width="1600" height="1078"
+            data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/properties-bg.jpg"></canvas>
+    </div>
+    <div class="site-bg accent">
+        <canvas class="lazyload" width="123" height="131"
+            data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/team-accent.png"></canvas>
+    </div>
 </section>
 <!-- properties end -->
 
 <!-- testimonials -->
 <section class="hp-testimonials">
     <div class="region-testimonials-container">
-            <div class="site-title">
-                <div class="site-title-group">
-                    <span>What Are</span>
-                    <em>Clients Says
-                        <img alt="logo" class="img-responsive"
+        <div class="site-title">
+            <div class="site-title-group">
+                <span>What Are</span>
+                <em>Clients Says
+                    <img alt="logo" class="img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
                         height="27" />
-                    </em>
-                </div>
+                </em>
             </div>
-        
-            <span class="testi-top"> "Helped 500+ families just like yours"</span>
+        </div>
+
+        <span class="testi-top"> "Helped 500+ families just like yours"</span>
         <div class="testimonials-slick">
             <div class="testimonials-content bg-orange">
                 <p>"We can't thank Laura enough for helping us find our dream home in Washington. It's exactly what we
@@ -652,12 +654,12 @@
                     <span>Latest</span>
                     <em>News
                         <img alt="logo" class="img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
-                        height="27" />
+                            src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
+                            height="27" />
                     </em>
                 </div>
                 <img alt="logo" class="img-responsive"
-                src="<?php echo get_stylesheet_directory_uri() ?>/images/title-leaf.png" width="195" height="219" />
+                    src="<?php echo get_stylesheet_directory_uri() ?>/images/title-leaf.png" width="195" height="219" />
             </div>
         </div>
         <div class="news-gallery-image-container">
@@ -697,13 +699,14 @@
         <div class="videos-header">
             <div class="site-title">
                 <img alt="logo" class="img-responsive"
-                src="<?php echo get_stylesheet_directory_uri() ?>/images/videos-leaf.png" width="201" height="222" />
+                    src="<?php echo get_stylesheet_directory_uri() ?>/images/videos-leaf.png" width="201"
+                    height="222" />
                 <div class="site-title-group">
                     <span>Featured</span>
                     <em>Videos
                         <img alt="logo" class="img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
-                        height="27" />
+                            src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
+                            height="27" />
                     </em>
                 </div>
             </div>
@@ -760,12 +763,13 @@
                     <span>Follow Us On</span>
                     <em>Social Media
                         <img alt="logo" class="img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
-                        height="27" />
+                            src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
+                            height="27" />
                     </em>
                 </div>
                 <img alt="logo" class="img-responsive"
-                src="<?php echo get_stylesheet_directory_uri() ?>/images/welcome-leaf.png" width="168" height="197" />
+                    src="<?php echo get_stylesheet_directory_uri() ?>/images/welcome-leaf.png" width="168"
+                    height="197" />
             </div>
         </div>
         <div class="social-gallery-image-container">
@@ -824,8 +828,8 @@
                 <span>Connect</span>
                 <em>With Us
                     <img alt="logo" class="img-responsive"
-                    src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
-                    height="27" />
+                        src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
+                        height="27" />
                 </em>
             </div>
         </div>
