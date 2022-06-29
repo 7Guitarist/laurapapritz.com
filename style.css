@@ -810,7 +810,7 @@ header.header {
   position: absolute;
   bottom: 217px;
   left: 200px;
-  font-family: "Merriweather", serif;
+  font-family: "Merriweather", serif;z-index: 111;
 }
 
 /*#endregion Slideshow Region */
