@@ -88,7 +88,8 @@
         </div>
         <div class="team-slick">
             <div class="team-item">
-                <a href="[blogurl]" aria-label="team" class="team-img canvas-wrapper">
+                <a href="https://www.youtube.com/watch?v=mSgTCmR5aPQ" aria-label="team"
+                    class="aios-video-popup team-img canvas-wrapper">
                     <canvas width="282" height="331"></canvas>
                     <img alt="team" class="img-team canvas-img img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/team-1.jpg" />
@@ -109,7 +110,7 @@
                 </div>
             </div>
             <div class="team-item">
-                <a href="[blogurl]" aria-label="team" class="team-img canvas-wrapper">
+                <a href="[blogurl]" aria-label="team" class="aios-video-popup team-img canvas-wrapper">
                     <canvas width="282" height="331"></canvas>
                     <img alt="team" class="img-team canvas-img img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/team-2.jpg" />
@@ -130,7 +131,7 @@
                 </div>
             </div>
             <div class="team-item">
-                <a href="[blogurl]" aria-label="team" class="team-img canvas-wrapper">
+                <a href="[blogurl]" aria-label="team" class="aios-video-popup team-img canvas-wrapper">
                     <canvas width="282" height="331"></canvas>
                     <img alt="team" class="img-team canvas-img img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/team-3.jpg" />
@@ -151,7 +152,7 @@
                 </div>
             </div>
             <div class="team-item">
-                <a href="[blogurl]" aria-label="team" class="team-img canvas-wrapper">
+                <a href="[blogurl]" aria-label="team" class="aios-video-popup team-img canvas-wrapper">
                     <canvas width="282" height="331"></canvas>
                     <img alt="team" class="img-team canvas-img img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/team-4.jpg" />
@@ -172,7 +173,7 @@
                 </div>
             </div>
             <div class="team-item">
-                <a href="[blogurl]" aria-label="team" class="team-img canvas-wrapper">
+                <a href="[blogurl]" aria-label="team" class="aios-video-popup team-img canvas-wrapper">
                     <canvas width="282" height="331"></canvas>
                     <img alt="team" class="img-team canvas-img img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/team-1.jpg" />
@@ -193,7 +194,7 @@
                 </div>
             </div>
             <div class="team-item">
-                <a href="[blogurl]" aria-label="team" class="team-img canvas-wrapper">
+                <a href="[blogurl]" aria-label="team" class="aios-video-popup team-img canvas-wrapper">
                     <canvas width="282" height="331"></canvas>
                     <img alt="team" class="img-team canvas-img img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/team-1.jpg" />
@@ -518,7 +519,7 @@
                 <div class="properties-content">
                     <img alt="properties" class="properties-logo"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/properties-logo.png" width="321"
-                        height="370" />
+                        height="321" />
                     <em>$17,200,000</em>
                     <p>1450 Maple Valley <br> Washington 98038, USA</p>
                     <span class="site-btn">View Details</span>
@@ -533,7 +534,7 @@
                 <div class="properties-content">
                     <img alt="properties" class="properties-logo"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/properties-logo.png" width="321"
-                        height="370" />
+                        height="321" />
                     <em>$17,200,000</em>
                     <p>1450 Maple Valley <br> Washington 98038, USA</p>
                     <span class="site-btn">View Details</span>
@@ -560,7 +561,7 @@
         <div class="properties-slick-arrow">
             <!-- <span class="ai-font-arrow-h-p prev"></span> -->
             <a href="[blogurl]" class="site-btn" aria-label="VIEW ALL properties">VIEW ALL properties</a>
-            <span class="ai-font-arrow-h-n next"></span>
+            <span class="ai-font-arrow-i-n"></span>
         </div>
     </div>
 
@@ -568,7 +569,7 @@
         <canvas class="lazyload" width="1600" height="1078"
             data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/properties-bg.jpg"></canvas>
     </div>
-    <div class="site-bg accent">
+    <div class="site-bg dot-accent">
         <canvas class="lazyload" width="123" height="131"
             data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/team-accent.png"></canvas>
     </div>
@@ -734,7 +735,8 @@
             <a href="[blogurl]" class="site-btn" aria-label="More Videos">More Videos</a>
         </div>
         <div class="videos-slick">
-            <a href="[blogurl]" aria-label="videos" class="videos-item">
+            <a href="https://www.youtube.com/watch?v=mSgTCmR5aPQ" aria-label="videos"
+                class="aios-video-popup videos-item">
                 <div class="videos-img canvas-wrapper">
                     <canvas width="969" height="545"></canvas>
                     <img alt="videos" class="img-videos canvas-img img-responsive"
@@ -742,7 +744,8 @@
                 </div>
                 <span class="site-play-btn ai-font-play-button-a"></span>
             </a>
-            <a href="[blogurl]" aria-label="videos" class="videos-item">
+            <a href="https://www.youtube.com/watch?v=mSgTCmR5aPQ" aria-label="videos"
+                class="aios-video-popup videos-item">
                 <div class="videos-img canvas-wrapper">
                     <canvas width="969" height="545"></canvas>
                     <img alt="videos" class="img-videos canvas-img img-responsive"
@@ -750,7 +753,8 @@
                 </div>
                 <span class="site-play-btn ai-font-play-button-a"></span>
             </a>
-            <a href="[blogurl]" aria-label="videos" class="videos-item">
+            <a href="https://www.youtube.com/watch?v=mSgTCmR5aPQ" aria-label="videos"
+                class="aios-video-popup videos-item">
                 <div class="videos-img canvas-wrapper">
                     <canvas width="969" height="545"></canvas>
                     <img alt="videos" class="img-videos canvas-img img-responsive"
