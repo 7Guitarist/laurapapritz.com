@@ -634,37 +634,38 @@ header.header {
   transition: all 0.4s ease;
 }
 
-.floating-view-wrap .floating-text:hover {
-  color: #ffffff;
-  background: #000000;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
 .floating-view-wrap.is-open .floating-body {
   opacity: 1;
+}
+
+.floating-body .close-sidebar {
+  color: #975910;
+  font-size: 26px;
+  display: flex;
+  cursor: pointer;
+  justify-content: end;
+}
+.floating-body .close-sidebar:hover {
+  color: #e6c956;
 }
 .floating-view.is-open {
   visibility: visible;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-.floating-body {
-  padding: 28px 35px 0;
-  border-top: 3px solid #8f8f8f;
-  border-bottom: 3px solid #8f8f8f;
-  border-left: 3px solid #8f8f8f;
-}
+
 .floating-form--btn {
+  --button-size: 58px;
   position: relative;
-  width: 170px;
-  height: 60px;
-  background: -webkit-linear-gradient(45deg, #ffffff 0%, #ffffff 100%);
-  background: linear-gradient(45deg, #ffffff 0%, #ffffff 100%);
+  width: 234px;
+  height: var(--button-size);
+
   align-items: center;
   white-space: nowrap;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.25em;
+
   cursor: pointer;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -674,8 +675,8 @@ header.header {
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
-  right: 60px;
-  top: calc(50% + 47.5px);
+  right: var(--button-size);
+  top: calc(50% + 135px);
 }
 
 .floating-form--btn span {
@@ -684,13 +685,16 @@ header.header {
   align-items: center;
   justify-content: center;
   height: 100%;
-  font-size: 14px;
-  letter-spacing: 0.075em;
-  color: #000000;
+  color: #fff;
+  background: #975910;
   text-transform: uppercase;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  border-top: 3px solid #8f8f8f;
+}
+
+.floating-form--btn:hover span {
+  background: #e6c956;
+  color: #975910;
 }
 
 .floating-form--btn em {
@@ -710,11 +714,8 @@ header.header {
 }
 
 .floating-form--btn.is-active {
-  width: 170px;
-  height: 60px;
-  right: 57px;
-  top: calc(50% + 47.5px);
   z-index: 5;
+  right: calc(var(--button-size) - 1px);
 }
 
 .floating-form-drop {
@@ -733,11 +734,11 @@ header.header {
 
 .floating-body {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
   background-size: cover;
   width: 100%;
   height: 100%;
+  padding: 18px;
   opacity: 0;
   text-align: center;
   -webkit-transition: all 0.4s ease;
@@ -745,7 +746,6 @@ header.header {
   overflow-y: auto;
   overflow-x: hidden;
   background: #ffffff;
-  max-height: 564px;
 }
 
 /*#endregion floating menu */
@@ -810,7 +810,8 @@ header.header {
   position: absolute;
   bottom: 217px;
   left: 200px;
-  font-family: "Merriweather", serif;z-index: 111;
+  font-family: "Merriweather", serif;
+  z-index: 111;
 }
 
 /*#endregion Slideshow Region */
