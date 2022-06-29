@@ -111,6 +111,13 @@
   .hp-welcome .welcome-secondary-section em {
     font-size: 25px;
   }
+  .hp-team .team-content-hover .site-btn {
+    width: 100%;
+}
+.hp-team .team-content-hover {
+  width: 100%;
+
+}
   /*#region Global */
   /*#endregion Global */
 
@@ -173,6 +180,20 @@
   .hp-welcome .welcome-secondary-section em {
     font-size: 21px;
   }
+
+  /* Team */
+  .hp-team .team-content em {
+    font-size: 20px;
+  }
+  .hp-team .team-content-hover > em {
+    font-size: 20px;
+}
+.hp-team .team-content span {
+  font-size: 12px;
+}
+.hp-team .team-content-hover > span {
+  font-size: 12px;
+}
   /*#region Global */
   /*#endregion Global */
 
@@ -258,6 +279,20 @@
   }
   .welcome-secondary-section {
     grid-column: 56/-2;
+  }
+
+/* Team */
+.hp-team .team-content em {
+  font-size: 18px;
+  }
+  .hp-team .team-content-hover > em{
+    font-size: 18px;
+  }
+  .hp-team .team-content span {
+    font-size: 12px;
+  }
+  .hp-team .team-content-hover > span {
+    font-size: 12px;
   }
   /*#region Global */
   /*#endregion Global */
@@ -417,6 +452,17 @@
   .aios-mobile-header-wrapper {
     z-index: 1020 !important;
   }
+  /*#region testimonials */
+  .hp-testimonials .site-title-group {
+    margin-bottom: 50px;
+  }
+  .hp-testimonials .testimonials-slick {
+    padding-top: 50px;
+  }
+  .hp-testimonials .testi-top {
+    font-size: 34px;
+  }
+/*#endregion testimonials  */
 
   .inner {
     width: 100%;
@@ -444,6 +490,32 @@
   .site-title .site-title-group em {
     font-size: 35px;
   }
+  /* #region testimonials */
+  .hp-testimonials .testi-top {
+    font-size: 23px;
+    padding-left: 0;
+  }
+  .hp-testimonials .site-title-group {
+    margin-bottom: 30px;
+  }
+  .hp-testimonials .site-title {
+    padding-left: 20px;
+}
+.hp-testimonials .site-title-group em {
+  gap: 20px;
+}
+  .slick-dots {
+    position: absolute;
+    top: initial;
+    right: initial;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hp-testimonials .testimonials-slick {
+    padding-top: 20px;
+}
+
+  /* #endregion testimonials */
   /* Welcome */
 
   .ip-banner .container {

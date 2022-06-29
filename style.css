@@ -1629,15 +1629,17 @@ img.properties-logo {
 }
 .hp-testimonials .testimonials-slick {
   max-width: 1250px;
-  margin: 0 auto;
+  margin: 0 auto -10px;
+  padding-top: 77px;
 }
 
 .hp-testimonials .slick-list {
-  margin: 0 -7px;
+  margin: 0 -9px;
+  padding-bottom: 10px;
 }
 
 .hp-testimonials .slick-slide {
-  margin: 0 7px;
+  margin: 0 9px;
 }
 
 .hp-testimonials .slick-slide > div:not(:last-child) {
@@ -1648,9 +1650,13 @@ img.properties-logo {
   position: relative;
   display: block !important;
 }
+.hp-testimonials .site-title {
+  padding-left: 26px;
+}
 .hp-testimonials .site-title-group {
   display: flex;
   flex-direction: column;
+  margin-bottom: 60px;
 }
 .hp-testimonials .site-title .site-title-group em {
   color: #ffffff;
@@ -1658,7 +1664,7 @@ img.properties-logo {
 .hp-testimonials .site-title .site-title-group span {
   color: #fbf0d2;
   letter-spacing: 0.75em;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .hp-testimonials .testi-top {
   font-size: 40px;
@@ -1666,10 +1672,10 @@ img.properties-logo {
   font-style: italic;
   color: #ffffff;
   font-weight: 300;
+  padding-left: 26px;
 }
 .hp-testimonials .testimonials-content {
   background: #55602e;
-  height: 325px;
   width: 378px;
 }
 .hp-testimonials .testimonials-content p {
@@ -1678,6 +1684,7 @@ img.properties-logo {
   letter-spacing: 0.05em;
   text-align: start;
   line-height: 1.64;
+  margin-bottom: 26px;
 }
 .testimonials-content em {
   font-size: 18px;
@@ -1698,14 +1705,25 @@ img.properties-logo {
 .testimonials-content.bg-white em {
   color: #975910;
 }
+.hp-testimonials .site-bg canvas {
+  height: 75%;
+  top: 0;
+}
+.hp-testimonials .site-bg-rgba::before {
+  height: 75%;
+}
+.hp-testimonials .site-line::before {
+  left: 28px;
+}
 
 /* Dots */
 
 .slick-dots {
   position: absolute;
-  bottom: -20px;
+  top: -35px;
+  right: 13px;
   display: block;
-  width: 100%;
+  width: auto;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -1746,7 +1764,7 @@ img.properties-logo {
 
 .slick-dots li:before {
   font-family: "slick";
-  font-size: 40px;
+  font-size: 50px;
   line-height: 20px;
   position: absolute;
   top: 0;
@@ -1763,7 +1781,7 @@ img.properties-logo {
 
 .slick-dots li.slick-active:before {
   opacity: 1;
-  color: #ff5601;
+  color: #fff;
 }
 
 /* Dots end */
@@ -1771,8 +1789,8 @@ img.properties-logo {
 .hp-testimonials .testimonials-content {
   display: flex !important;
   flex-direction: column;
-  gap: 39px;
   padding: 60px 40px;
+  box-shadow: 0 1px 11px rgb(0 0 0 / 30%);
 }
 
 .hp-testimonials .testimonials-content h3 {
