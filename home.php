@@ -192,16 +192,37 @@
                     <a href="[blogurl]" aria-label="More Info" class="site-btn">More Info</a>
                 </div>
             </div>
+            <div class="team-item">
+                <a href="[blogurl]" aria-label="team" class="team-img canvas-wrapper">
+                    <canvas width="282" height="331"></canvas>
+                    <img alt="team" class="img-team canvas-img img-responsive"
+                        src="<?php echo get_stylesheet_directory_uri() ?>/images/team-1.jpg" />
+                    <span class="site-play-btn ai-font-play-button-a"></span>
+                </a>
+                <div class="team-content">
+                    <em>Dane Andersen</em>
+                    <span>Broker</span>
+                </div>
+                <div class="team-content-hover">
+                    <em>Dane Andersen</em>
+                    <span>Broker</span>
+                    <div class="team-contact-item">
+                        <span class="ai-font-phone"></span>
+                        <?php echo do_shortcode('[ai_phone href="+1.206.331.2927"] 206.331.2927[/ai_phone]')?>
+                    </div>
+                    <a href="[blogurl]" aria-label="More Info" class="site-btn">More Info</a>
+                </div>
+            </div>
         </div>
         <div class="team-slick-arrow">
             <div class="slick-arrow prev">
-                <span class="ai-font-arrow-h-p "></span>
+                <span class="ai-font-arrow-i-p "></span>
                 prev
             </div>
             <a href="[blogurl]" class="site-btn" aria-label="VIEW ALL team">VIEW ALL team</a>
             <div class="slick-arrow next">
                 next
-                <span class="ai-font-arrow-h-n "></span>
+                <span class="ai-font-arrow-i-n "></span>
             </div>
         </div>
     </div>
