@@ -810,7 +810,7 @@ header.header {
   position: absolute;
   bottom: 217px;
   left: 200px;
-  font-family: "Merriweather", serif;
+  font-family: "Merriweather", serif;z-index: 111;
 }
 
 /*#endregion Slideshow Region */
@@ -1179,11 +1179,7 @@ a.team-img.canvas-wrapper {
 /*#region Communities Region */
 
 .hp-communities {
-<<<<<<< HEAD
   padding: 123px 30px;
-=======
-  padding: 119px 24px 30px 24px;
->>>>>>> 997624ae615df3ea686c15af7043b916f4654ab8
 }
 .region-communities-container {
   position: relative;
@@ -1370,17 +1366,11 @@ img.img-communities.canvas-img.img-responsive {
 
 }
 
-<<<<<<< HEAD
 .communities-content > em {
   position: absolute;
   bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
-=======
-.communities-content em {
-  font-size: 22px;
-  font-family: var(--font-family-title);
->>>>>>> 997624ae615df3ea686c15af7043b916f4654ab8
   color: #fbf0d2;
   font-size: 22px;
   letter-spacing: 0.2em;
@@ -1401,12 +1391,7 @@ img.img-communities.canvas-img.img-responsive {
 
 .communities-content span {
   font-size: 14px;
-<<<<<<< HEAD
-  font-family: "Source Sans Pro", sans-serif;
-  letter-spacing: 0.5em;
-=======
   letter-spacing: 0.05em;
->>>>>>> 997624ae615df3ea686c15af7043b916f4654ab8
   text-transform: uppercase;
   color: #975910;
   display: flex;
@@ -1432,7 +1417,6 @@ img.img-communities.canvas-img.img-responsive {
   justify-content: flex-start;
 }
 
-<<<<<<< HEAD
 
 .communities-content-hover {
   position: absolute;
@@ -1454,25 +1438,6 @@ img.communities-logo.img-responsive {
 }
 
 
-=======
-.communities-item .communities-content {
-  opacity: 0;
-
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
-.communities-item:hover .communities-content > em {
-  opacity: 0;
-}
-
-.communities-item:hover .communities-content {
-opacity: 1;
-}
-
->>>>>>> 997624ae615df3ea686c15af7043b916f4654ab8
 /*#endregion Communities Region */
 
 /*#region Properties Region */
@@ -1601,11 +1566,7 @@ opacity: 1;
 /*#region Testimonial Region */
 
 .hp-testimonials {
-<<<<<<< HEAD
   padding: 120px 24px 30px 24px;
-=======
-  padding: 119px 24px 30px 24px;
->>>>>>> 997624ae615df3ea686c15af7043b916f4654ab8
 }
 .region-testimonials-container {
   max-width: 1173px;
