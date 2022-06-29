@@ -799,7 +799,12 @@ header.header {
 .hp-slideshow .slideshow-content em {
   font-size: 85px;
   color: #ffffff;
-  position: relative;
+  position: absolute;
+  left: 214px;
+  bottom: 222px;
+  font-style: normal;
+  font-family: var(--font-family-title);
+  letter-spacing: 0.025em;
 }
 
 /*#endregion Slideshow Region */
@@ -1496,6 +1501,7 @@ opacity: 1;
 }
 .hp-testimonials .site-title .site-title-group em {
   color: #ffffff;
+  padding-bottom: 60px;
 }
 .hp-testimonials .site-title .site-title-group span {
   color: #fbf0d2;
