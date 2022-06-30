@@ -57,7 +57,7 @@ TABLE OF CONTENTS
 #nav .sub-menu {
   position: absolute;
   width: 100%;
-  min-width: 190px;
+  min-width: 315px;
   text-align: center;
   font-weight: 400;
   opacity: 0;
@@ -66,6 +66,16 @@ TABLE OF CONTENTS
   pointer-events: none;
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
+}
+
+#nav > li:first-of-type .sub-menu {
+  min-width: 160px;
+}
+
+/* grid */
+#nav .header-communities .sub-menu {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 #nav li:hover > .sub-menu {
@@ -91,13 +101,37 @@ TABLE OF CONTENTS
   display: inline-block;
 }
 
+#nav li:nth-of-type(1),
+#nav li:nth-of-type(3),
+#nav li:nth-of-type(4) {
+  margin-right: 40px;
+}
+#nav li:nth-of-type(2) {
+  margin-right: 45px;
+}
+#nav li:nth-of-type(5),
+#nav li:nth-of-type(6) {
+  margin-right: 30px;
+}
+
 #nav .sub-menu a {
-  background: #ffffff;
-  color: #333333;
+  color: #ffffff;
+
   display: block;
   text-align: center;
   padding: 10px 0;
-  margin: 1px 6px 0;
+}
+
+#nav li:nth-of-type(odd) .sub-menu a {
+  background: #764d1c;
+}
+#nav li:nth-of-type(even) .sub-menu a {
+  background: #55602e;
+}
+
+#nav .sub-menu a:hover {
+  background: #e6c956;
+  color: #764d1c;
 }
 
 #nav .sub-menu a:hover {
@@ -302,13 +336,14 @@ canvas.lazyloaded {
 }
 
 /* Site Button */
-.site-btn {
+.site-btn,
+.form-btn-wrapper input {
   color: #975910;
-  border: 1px solid #e6c956;
-  border-radius: 3px;
+  border: 2px solid #e6c956;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.5em;
+  border-radius: 3px;
 
   width: 340px;
   height: 66px;
@@ -330,7 +365,8 @@ canvas.lazyloaded {
   transition: all 0.1s ease-in-out;
 }
 
-.site-btn:hover {
+.site-btn:hover,
+.form-btn-wrapper input:hover {
   background: #e6c956;
   color: #764d1c;
 }
@@ -346,7 +382,8 @@ body #pojo-a11y-toolbar.pojo-a11y-toolbar-left .pojo-a11y-toolbar-toggle {
 }
 
 /* Contact Form Validation */
-.contact-form div.wpcf7-response-output {
+.contact-form div.wpcf7-response-output,
+.social-fixed-form div.wpcf7-response-output {
   font-size: 14px;
   text-align: center;
   position: absolute;
@@ -356,25 +393,29 @@ body #pojo-a11y-toolbar.pojo-a11y-toolbar-left .pojo-a11y-toolbar-toggle {
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
-  color: #09203d;
+  color: #fbf0d2;
 }
 
-.contact-form span.wpcf7-not-valid-tip {
+.contact-form span.wpcf7-not-valid-tip,
+.social-fixed-form span.wpcf7-not-valid-tip {
   font-size: 15px;
 }
 
-.contact-form .wpcf7-form-control-wrap {
+.contact-form .wpcf7-form-control-wrap,
+.social-fixed-form .wpcf7-form-control-wrap {
   display: block;
 }
 
-.contact-form div.wpcf7 .ajax-loader {
+.contact-form div.wpcf7 .ajax-loader,
+.social-fixed-form div.wpcf7 .ajax-loader {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   bottom: -19px;
 }
 
-.contact-form .use-floating-validation-tip .wpcf7-not-valid-tip {
+.contact-form .use-floating-validation-tip .wpcf7-not-valid-tip,
+.social-fixed-form .use-floating-validation-tip .wpcf7-not-valid-tip {
   position: absolute;
   top: 0;
   width: 180px;
@@ -535,14 +576,17 @@ header.header {
   align-items: center;
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .header-logo {
-  grid-column: 3/10;
+  grid-column: 4/28;
+  max-width: 372px;
 }
 
 .navigation {
-  grid-column: 10/-11;
+  grid-column: 38/-8;
 }
 
 .header-logo img {
@@ -550,8 +594,8 @@ header.header {
 }
 
 .header .navigation #nav {
-  font-size: 14px;
-  letter-spacing: 0.07em;
+  font-size: 16px;
+  letter-spacing: 0.15em;
   color: #ffffff;
   text-transform: uppercase;
   display: flex;
@@ -561,13 +605,15 @@ header.header {
 
 /* Menu Before */
 
+/* Navigation Dual Line Hover */
 #nav > li::before {
   content: "";
   position: absolute;
   width: 0;
-  height: 3px;
-  background: #05616b;
-  bottom: -20px;
+  min-width: 0;
+  height: 1px;
+  background: #e6c956;
+  bottom: -7px;
   left: 50%;
   transform: translateX(-50%);
   pointer-events: none;
@@ -575,13 +621,32 @@ header.header {
   -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  opacity: 0;
+}
+#nav > li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  min-width: 0;
+  height: 1px;
+  background: #e6c956;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
 }
 
-#nav > li:hover::before {
+#nav > li:hover::before,
+#nav > li:hover::after {
   opacity: 1;
   width: 100%;
+  min-width: 121px;
 }
-
 .header .navigation #nav > li > a:hover {
   color: #fff;
 }
@@ -594,10 +659,11 @@ header.header {
   left: 0;
   z-index: 1010;
   opacity: 1;
-  background: gray;
+  background: #000000;
   margin-top: 0;
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
+  padding: 9px 0;
 }
 
 .header.show-fixed #nav .sub-menu {
@@ -625,7 +691,7 @@ header.header {
 .floating-view-wrap {
   display: block;
   position: relative;
-  width: 500px;
+  width: 328px;
   height: 100%;
   -webkit-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
@@ -634,37 +700,38 @@ header.header {
   transition: all 0.4s ease;
 }
 
-.floating-view-wrap .floating-text:hover {
-  color: #ffffff;
-  background: #000000;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
 .floating-view-wrap.is-open .floating-body {
   opacity: 1;
+}
+
+.floating-body .close-sidebar {
+  color: #975910;
+  font-size: 26px;
+  display: flex;
+  cursor: pointer;
+  justify-content: end;
+}
+.floating-body .close-sidebar:hover {
+  color: #e6c956;
 }
 .floating-view.is-open {
   visibility: visible;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-.floating-body {
-  padding: 28px 35px 0;
-  border-top: 3px solid #8f8f8f;
-  border-bottom: 3px solid #8f8f8f;
-  border-left: 3px solid #8f8f8f;
-}
+
 .floating-form--btn {
+  --button-size: 58px;
   position: relative;
-  width: 170px;
-  height: 60px;
-  background: -webkit-linear-gradient(45deg, #ffffff 0%, #ffffff 100%);
-  background: linear-gradient(45deg, #ffffff 0%, #ffffff 100%);
+  width: 234px;
+  height: var(--button-size);
+
   align-items: center;
   white-space: nowrap;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.25em;
+
   cursor: pointer;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -674,8 +741,8 @@ header.header {
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
-  right: 60px;
-  top: calc(50% + 47.5px);
+  right: var(--button-size);
+  top: calc(50% + 135px);
 }
 
 .floating-form--btn span {
@@ -684,13 +751,16 @@ header.header {
   align-items: center;
   justify-content: center;
   height: 100%;
-  font-size: 14px;
-  letter-spacing: 0.075em;
-  color: #000000;
+  color: #fff;
+  background: #975910;
   text-transform: uppercase;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  border-top: 3px solid #8f8f8f;
+}
+
+.floating-form--btn:hover span {
+  background: #e6c956;
+  color: #975910;
 }
 
 .floating-form--btn em {
@@ -710,11 +780,8 @@ header.header {
 }
 
 .floating-form--btn.is-active {
-  width: 170px;
-  height: 60px;
-  right: 57px;
-  top: calc(50% + 47.5px);
   z-index: 5;
+  right: calc(var(--button-size) - 1px);
 }
 
 .floating-form-drop {
@@ -733,11 +800,11 @@ header.header {
 
 .floating-body {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
   background-size: cover;
   width: 100%;
   height: 100%;
+  padding: 18px 18px 100px;
   opacity: 0;
   text-align: center;
   -webkit-transition: all 0.4s ease;
@@ -745,8 +812,107 @@ header.header {
   overflow-y: auto;
   overflow-x: hidden;
   background: #ffffff;
-  max-height: 564px;
 }
+
+.floating-body > img {
+  margin: 0 auto 56px;
+}
+
+.social-fixed-contact-item {
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0.05em;
+
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+}
+
+.social-fixed-contact-item:hover a {
+  color: #222;
+}
+
+.social-fixed-contact-item .ai-font-phone-o {
+  color: #e6ca59;
+  font-size: 18px;
+}
+.social-fixed-contact-item .ai-font-envelope-o {
+  color: #e6ca59;
+  font-size: 18px;
+}
+
+.social-fixed-contact-item:first-of-type {
+  margin-bottom: 17px;
+}
+
+.social-fixed-contact-item:last-of-type {
+  margin-bottom: 45px;
+}
+
+/* FixedContact  */
+
+.social-fixed-form .form-md input,
+.social-fixed-form .form-lg textarea {
+  border: 0;
+  border: solid 1px #e6c956;
+  color: #975910;
+  border-radius: 3px;
+}
+.social-fixed-form {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+
+  margin: 0 auto;
+  font-size: 0;
+
+  z-index: 2;
+}
+.social-fixed-form .form-md {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 6px;
+  width: 100%;
+}
+
+.social-fixed-form .form-md input {
+  width: 100%;
+  min-height: 40px;
+  background: transparent;
+  letter-spacing: 0.05em;
+  font-size: 15px;
+  padding-left: 20px;
+}
+.social-fixed-form .form-lg textarea {
+  width: 100%;
+  min-height: 134px;
+  max-height: 134px;
+  background: transparent;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  resize: none;
+  padding-left: 20px;
+  padding-top: 14px;
+}
+.social-fixed-form .form-lg {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.floating-view-wrap .form-btn-wrapper input {
+  width: 217px;
+  color: #975910;
+  background: #e6c956;
+}
+
+.floating-view-wrap .form-btn-wrapper input:hover {
+  background: #eed675;
+}
+
+.floating-view-wrap .social-fixed-form div.wpcf7-response-output {
+  color: #333;
+}
+/* FixedContact  */
 
 /*#endregion floating menu */
 
@@ -799,6 +965,63 @@ header.header {
 
 .hp-slideshow {
   /* padding: 30px 24px 30px 24px; */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+14 */
+}
+.hp-slideshow::before,
+.hp-slideshow::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.hp-slideshow::after {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+88,0.65+100 */
+  background: -moz-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 88%,
+    rgba(0, 0, 0, 0.65) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 88%,
+    rgba(0, 0, 0, 0.65) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 88%,
+    rgba(0, 0, 0, 0.65) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 */
+}
+
+.hp-slideshow::before {
+  background: -moz-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0) 14%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0) 14%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0) 14%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
 }
 .hp-slideshow .slideshow-content em {
   font-size: 85px;
@@ -810,7 +1033,45 @@ header.header {
   position: absolute;
   bottom: 217px;
   left: 200px;
-  font-family: "Merriweather", serif;z-index: 111;
+  font-family: "Merriweather", serif;
+  z-index: 111;
+}
+
+.cycloneslider-slide.cycloneslider-slide-image::before,
+.cycloneslider-slide.cycloneslider-slide-image::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.cycloneslider-slide.cycloneslider-slide-image::before {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.cycloneslider-slide.cycloneslider-slide-image::after {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+36 */
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0) 36%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0) 36%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0) 36%,
+    rgba(0, 0, 0, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
 /*#endregion Slideshow Region */
@@ -1608,6 +1869,7 @@ img.communities-logo.img-responsive {
   z-index: 4;
   left: -100px;
   bottom: -113px;
+  bottom: -333px;
   background: #975910;
   border-radius: 50%;
   width: 402px;
@@ -1617,6 +1879,16 @@ img.communities-logo.img-responsive {
   align-items: center;
   justify-content: center;
   opacity: 0;
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.slick-slide.slick-current.slick-active .properties-content {
+  opacity: 1;
+
+  bottom: -113px;
 }
 
 .hp-properties .properties-content h3 {
@@ -1682,9 +1954,7 @@ img.communities-logo.img-responsive {
 .properties-item:hover .site-btn {
   background-color: #e6c956;
 }
-.slick-slide.slick-current.slick-active .properties-content {
-  opacity: 1;
-}
+
 .hp-properties span.ai-font-arrow-i-n {
   font-size: 14px;
 }
@@ -2371,51 +2641,87 @@ img.communities-logo.img-responsive {
 /*#region Contact Region */
 
 .hp-contact {
-  padding: 30px 24px 30px 24px;
+  /* padding: 30px 24px 30px 24px; */
+  padding: 120px 15px;
+}
+
+.hp-contact .site-bg-rgba::before {
+  background: rgb(40 44 24 / 0.75);
+}
+
+.hp-contact .site-title .site-title-group span {
+  color: #fbf0d2;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.hp-contact .site-title .site-title-group em {
+  color: #fff;
+}
+
+.hp-contact .site-title {
+  max-width: 1140px;
+  margin: 0 auto 37px;
+}
+
+.hp-contact .site-line::before {
+  left: 27px;
+}
+
+.region-contact-container {
+  position: relative;
+  z-index: 1;
 }
 
 .contact-form .form-md input,
 .contact-form .form-lg textarea {
   border: 0;
-  border-bottom: solid 1px #ffffff;
-  color: #fff;
+  border-bottom: solid 2px #fbf0d2;
+  color: #fbf0d2;
 }
 .contact-form {
   position: relative;
   width: 100%;
-  max-width: 800px;
+  max-width: 810px;
   margin: 0 auto;
   font-size: 0;
-  background: #2b2c2e;
-  padding: 46px 100px 60px;
+
   z-index: 2;
 }
 .contact-form .form-md {
   display: inline-block;
   vertical-align: middle;
-  margin-bottom: 10px;
+  margin-bottom: 32px;
   width: 50%;
+}
+
+.contact-form .form-md.full {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 6px;
 }
 .contact-form .form-md input {
   width: 100%;
   min-height: 38px;
+  min-height: 70px;
   text-transform: uppercase;
   background: transparent;
-  font-size: 13px;
-  letter-spacing: 0.1em;
+  font-size: 15px;
+  letter-spacing: 0.25em;
 }
 .contact-form .form-lg textarea {
   width: 100%;
   min-height: 50px;
+  max-height: 80px;
   background: transparent;
-  font-size: 13px;
+  font-size: 15px;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.25em;
   resize: none;
 }
 .contact-form .form-lg {
   position: relative;
-  margin-bottom: 56px;
+  margin-bottom: 64px;
 }
 .contact-form .pad-left,
 .contact-form .middle-pad-left {
@@ -2426,12 +2732,21 @@ img.communities-logo.img-responsive {
   padding-left: 5px;
 }
 
+.form-btn-wrapper input {
+  margin: 0 auto;
+  color: #fbf0d2;
+}
+
+.hp-contact .form-btn-wrapper input {
+  max-width: 295px;
+}
+
+.form-btn-wrapper input:hover {
+  color: #975910;
+}
+
 /*#endregion Contact Region */
 
 /* header.header{
   display: none;
 } */
-
-.header {
-  display: none !important;
-}
