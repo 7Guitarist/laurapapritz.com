@@ -676,13 +676,16 @@
             <div class="site-title">
                 <div class="site-title-group">
                     <span>Latest</span>
-                    <em>News
-                        <img alt="logo" class="img-responsive"
-                            src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
-                            height="27" />
+                    <em>
+                        <div class="site-line">
+                            <img alt="logo" class="img-responsive"
+                                src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
+                                height="27" />
+                        </div>
+                        News
                     </em>
                 </div>
-                <img alt="logo" class="img-responsive"
+                <img alt="logo" class="img-responsive mews-leaf"
                     src="<?php echo get_stylesheet_directory_uri() ?>/images/title-leaf.png" width="195" height="219" />
             </div>
         </div>
@@ -728,9 +731,11 @@
                 <div class="site-title-group">
                     <span>Featured</span>
                     <em>Videos
-                        <img alt="logo" class="img-responsive"
-                            src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
-                            height="27" />
+                        <div class="site-line">
+                            <img alt="logo" class="img-responsive"
+                                src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
+                                height="27" />
+                        </div>
                     </em>
                 </div>
             </div>
@@ -788,10 +793,10 @@
             <div class="site-title">
                 <div class="site-title-group">
                     <span>Follow Us On</span>
-                    <em>Social Media
-                        <img alt="logo" class="img-responsive"
+                    <em> <img alt="logo" class="img-responsive"
                             src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
-                            height="27" />
+                            height="27" />Social Media
+
                     </em>
                 </div>
                 <img alt="logo" class="img-responsive"

@@ -90,7 +90,7 @@
     grid-template-columns: repeat(5, 1fr);
     max-width: 1250px;
     grid-row-gap: 0px;
-    grid-column-gap: 10px;
+    grid-column-gap: 13px;
     margin: 0 auto;
   }
 
@@ -541,7 +541,17 @@
     font-size: 25px;
   }
   /*#endregion Global */
-
+  /*#region testimonials */
+    .hp-testimonials .site-title {
+      padding-left: 0px;
+  }
+  .hp-testimonials .site-title-group {
+    margin-bottom: 20px;
+  }
+  .hp-testimonials .testi-top {
+    font-size: 20px;
+  }
+  /*#endregion testimonials */
   /*#region Footer */
   /*#endregion Footer */
   /*#region Fixed smi */
