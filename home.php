@@ -221,45 +221,45 @@
         <div class="site-title">
             <div class="site-title-group">
                 <span>Why</span>
-                <em>Work With Us
-                    <img alt="logo" class="img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
-                        height="27" />
+                <em> <img alt="logo" class="img-responsive"
+                    src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
+                    height="27" />Work With Us
+                   
                 </em>
             </div>
             <img alt="logo" class="img-responsive"
                 src="<?php echo get_stylesheet_directory_uri() ?>/images/title-leaf.png" width="195" height="219" />
         </div>
         <div class="work-content">
-            <div class="work-item">
+            <div class="work-item bg-orange">
                 <em><i class="count">500</i>+</em>
                 <span>happy clients
                 </span>
             </div>
-            <div class="work-item">
+            <div class="work-item bg-white">
                 <em><i class="count">445</i>+</em>
                 <span>home sold
                 </span>
             </div>
-            <div class="work-item">
+            <div class="work-item bg-green">
                 <em> $<i class="count">360 </i>M</em>
                 <span>since 2018
                 </span>
             </div>
-            <div class="work-item">
+            <div class="work-item bg-last">
                 <em><i class="count">20</i>+</em>
-                <span>Years of
+                <span>Years of <br>
                     experience
                 </span>
             </div>
 
         </div>
     </div>
-    <div class="site-bg">
+    <div class="site-bg right-green">
         <canvas class="lazyload" width="651" height="652"
             data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/work-bg.jpg"></canvas>
     </div>
-    <div class="site-bg accent site-bg-grayscale">
+    <div class="site-bg accent site-bg-grayscale site-bg-rgba">
         <canvas class="lazyload" width="1070" height="652"
             data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/work-accent.jpg"></canvas>
     </div>
