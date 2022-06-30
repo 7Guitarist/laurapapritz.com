@@ -854,15 +854,21 @@
             <div class="site-title-group">
                 <span>Connect</span>
                 <em>With Us
-                    <img alt="logo" class="img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
-                        height="27" />
+                    <div class="site-line">
+                        <img alt="logo" class="img-responsive"
+                            src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
+                            height="27" />
+                    </div>
                 </em>
             </div>
         </div>
         <div class="contact-form ">
             <?php echo do_shortcode('[contact-form-7 html_class="use-floating-validation-tip" id="34" title="hp template form 2"]')?>
         </div>
+    </div>
+    <div class="site-bg site-bg-rgba">
+        <canvas class="lazyload" width="1600" height="779"
+            data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/contact-bg.jpg"></canvas>
     </div>
 </section>
 <!-- contact end -->

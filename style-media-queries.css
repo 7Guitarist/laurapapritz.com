@@ -113,11 +113,10 @@
   }
   .hp-team .team-content-hover .site-btn {
     width: 100%;
-}
-.hp-team .team-content-hover {
-  width: 100%;
-
-}
+  }
+  .hp-team .team-content-hover {
+    width: 100%;
+  }
   /*#region Global */
   /*#endregion Global */
 
@@ -187,13 +186,13 @@
   }
   .hp-team .team-content-hover > em {
     font-size: 20px;
-}
-.hp-team .team-content span {
-  font-size: 12px;
-}
-.hp-team .team-content-hover > span {
-  font-size: 12px;
-}
+  }
+  .hp-team .team-content span {
+    font-size: 12px;
+  }
+  .hp-team .team-content-hover > span {
+    font-size: 12px;
+  }
   /*#region Global */
   /*#endregion Global */
 
@@ -281,11 +280,11 @@
     grid-column: 56/-2;
   }
 
-/* Team */
-.hp-team .team-content em {
-  font-size: 18px;
+  /* Team */
+  .hp-team .team-content em {
+    font-size: 18px;
   }
-  .hp-team .team-content-hover > em{
+  .hp-team .team-content-hover > em {
     font-size: 18px;
   }
   .hp-team .team-content span {
@@ -435,6 +434,10 @@
   /*#endregion Header */
 
   /*#region Contact */
+  .hp-contact .site-title {
+    display: grid;
+    justify-content: center;
+  }
 
   .contact-form .form-md {
     width: 100%;
@@ -462,7 +465,7 @@
   .hp-testimonials .testi-top {
     font-size: 34px;
   }
-/*#endregion testimonials  */
+  /*#endregion testimonials  */
 
   .inner {
     width: 100%;
@@ -500,10 +503,10 @@
   }
   .hp-testimonials .site-title {
     padding-left: 20px;
-}
-.hp-testimonials .site-title-group em {
-  gap: 20px;
-}
+  }
+  .hp-testimonials .site-title-group em {
+    gap: 20px;
+  }
   .slick-dots {
     position: absolute;
     top: initial;
@@ -513,9 +516,18 @@
   }
   .hp-testimonials .testimonials-slick {
     padding-top: 20px;
-}
+  }
 
   /* #endregion testimonials */
+
+  /* Contact */
+  .hp-contact .site-title .site-title-group em {
+    font-size: 65px;
+  }
+
+  .hp-contact .site-title .site-title-group span {
+    font-size: 22px;
+  }
   /* Welcome */
 
   .ip-banner .container {
@@ -542,6 +554,15 @@
   }
   /*#endregion Global */
 
+  /* Contact */
+  .hp-contact .site-title .site-title-group span {
+    font-size: 16px;
+  }
+
+  .hp-contact .site-title .site-title-group em {
+    font-size: 45px;
+    gap: 19px;
+  }
   /*#region Footer */
   /*#endregion Footer */
   /*#region Fixed smi */
