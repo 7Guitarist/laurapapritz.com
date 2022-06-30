@@ -13,7 +13,7 @@
 </section>
 <!-- slideshow end -->
 <!-- welcome -->
-<section class="hp-welcome"> 
+<section class="hp-welcome">
     <div class="region-welcome-container">
         <div class="site-title">
             <img alt="logo" class="img-responsive"
@@ -21,10 +21,10 @@
             <div class="site-title-group">
                 <span>About Us</span>
                 <em>Who We Are <div class="site-line">
-                    <img alt="logo" class="img-responsive"
+                        <img alt="logo" class="img-responsive"
                             src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
                             height="27" />
-                </div></em>
+                    </div></em>
             </div>
         </div>
         <div class="welcome-content">
@@ -41,7 +41,8 @@
                     in
                     Washington.
                 </p>
-                <p class="welcome-text-last">This is the moment that you should enjoy the most; looking at the available properties in Washington;
+                <p class="welcome-text-last">This is the moment that you should enjoy the most; looking at the available
+                    properties in Washington;
                     imagining yourself living in the home that you have always dreamed about. You don't want just
                     another
                     database that gives you rehashed property descriptions.</p>
@@ -72,7 +73,7 @@
 </section>
 <!-- welcome end -->
 <!-- team -->
-<section class="hp-team"> 
+<section class="hp-team">
     <div class="region-team-container">
         <div class="site-title">
             <img alt="logo" class="img-responsive"
@@ -87,7 +88,8 @@
         </div>
         <div class="team-slick">
             <div class="team-item">
-                <a href="[blogurl]" aria-label="team" class="team-img canvas-wrapper">
+                <a href="https://www.youtube.com/watch?v=mSgTCmR5aPQ" aria-label="team"
+                    class="aios-video-popup team-img canvas-wrapper">
                     <canvas width="282" height="331"></canvas>
                     <img alt="team" class="img-team canvas-img img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/team-1.jpg" />
@@ -108,7 +110,7 @@
                 </div>
             </div>
             <div class="team-item">
-                <a href="[blogurl]" aria-label="team" class="team-img canvas-wrapper">
+                <a href="[blogurl]" aria-label="team" class="aios-video-popup team-img canvas-wrapper">
                     <canvas width="282" height="331"></canvas>
                     <img alt="team" class="img-team canvas-img img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/team-2.jpg" />
@@ -129,7 +131,7 @@
                 </div>
             </div>
             <div class="team-item">
-                <a href="[blogurl]" aria-label="team" class="team-img canvas-wrapper">
+                <a href="[blogurl]" aria-label="team" class="aios-video-popup team-img canvas-wrapper">
                     <canvas width="282" height="331"></canvas>
                     <img alt="team" class="img-team canvas-img img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/team-3.jpg" />
@@ -150,7 +152,7 @@
                 </div>
             </div>
             <div class="team-item">
-                <a href="[blogurl]" aria-label="team" class="team-img canvas-wrapper">
+                <a href="[blogurl]" aria-label="team" class="aios-video-popup team-img canvas-wrapper">
                     <canvas width="282" height="331"></canvas>
                     <img alt="team" class="img-team canvas-img img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/team-4.jpg" />
@@ -171,7 +173,28 @@
                 </div>
             </div>
             <div class="team-item">
-                <a href="[blogurl]" aria-label="team" class="team-img canvas-wrapper">
+                <a href="[blogurl]" aria-label="team" class="aios-video-popup team-img canvas-wrapper">
+                    <canvas width="282" height="331"></canvas>
+                    <img alt="team" class="img-team canvas-img img-responsive"
+                        src="<?php echo get_stylesheet_directory_uri() ?>/images/team-1.jpg" />
+                    <span class="site-play-btn ai-font-play-button-a"></span>
+                </a>
+                <div class="team-content">
+                    <em>Dane Andersen</em>
+                    <span>Broker</span>
+                </div>
+                <div class="team-content-hover">
+                    <em>Dane Andersen</em>
+                    <span>Broker</span>
+                    <div class="team-contact-item">
+                        <span class="ai-font-phone"></span>
+                        <?php echo do_shortcode('[ai_phone href="+1.206.331.2927"] 206.331.2927[/ai_phone]')?>
+                    </div>
+                    <a href="[blogurl]" aria-label="More Info" class="site-btn">More Info</a>
+                </div>
+            </div>
+            <div class="team-item">
+                <a href="[blogurl]" aria-label="team" class="aios-video-popup team-img canvas-wrapper">
                     <canvas width="282" height="331"></canvas>
                     <img alt="team" class="img-team canvas-img img-responsive"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/team-1.jpg" />
@@ -194,13 +217,13 @@
         </div>
         <div class="team-slick-arrow">
             <div class="slick-arrow prev">
-                <span class="ai-font-arrow-h-p "></span>
+                <span class="ai-font-arrow-i-p "></span>
                 prev
             </div>
             <a href="[blogurl]" class="site-btn" aria-label="VIEW ALL team">VIEW ALL team</a>
             <div class="slick-arrow next">
                 next
-                <span class="ai-font-arrow-h-n "></span>
+                <span class="ai-font-arrow-i-n "></span>
             </div>
         </div>
     </div>
@@ -296,9 +319,11 @@
                             height="175" />
                         <span>Current Listings</span>
                         <span>Market Reports</span>
+                        <em>Bellevue</em>
                     </div>
                     <em>Bellevue</em>
                 </div>
+
 
             </a>
             <a href="[blogurl]" aria-label="communities" class="communities-item">
@@ -314,6 +339,7 @@
                             height="175" />
                         <span>Current Listings</span>
                         <span>Market Reports</span>
+                        <em>North Bend</em>
                     </div>
                     <em>North Bend</em>
                 </div>
@@ -331,6 +357,7 @@
                             height="175" />
                         <span>Current Listings</span>
                         <span>Market Reports</span>
+                        <em>Issaquah</em>
                     </div>
                     <em>Issaquah</em>
                 </div>
@@ -348,6 +375,7 @@
                             height="175" />
                         <span>Current Listings</span>
                         <span>Market Reports</span>
+                        <em>Renton</em>
                     </div>
                     <em>Renton</em>
                 </div>
@@ -365,6 +393,7 @@
                             height="175" />
                         <span>Current Listings</span>
                         <span>Market Reports</span>
+                        <em>Kent</em>
                     </div>
                     <em>Kent</em>
                 </div>
@@ -382,6 +411,7 @@
                             height="175" />
                         <span>Current Listings</span>
                         <span>Market Reports</span>
+                        <em>Sammamish</em>
                     </div>
                     <em>Sammamish</em>
                 </div>
@@ -399,6 +429,7 @@
                             height="175" />
                         <span>Current Listings</span>
                         <span>Market Reports</span>
+                        <em>Mapple <br> Valley</em>
                     </div>
                     <em>Mapple <br> Valley</em>
                 </div>
@@ -416,6 +447,7 @@
                             height="175" />
                         <span>Current Listings</span>
                         <span>Market Reports</span>
+                        <em>Snoqualmie</em>
                     </div>
                     <em>Snoqualmie</em>
                 </div>
@@ -433,6 +465,7 @@
                             height="175" />
                         <span>Current Listings</span>
                         <span>Market Reports</span>
+                        <em>Bellevue</em>
                     </div>
                     <em>Bellevue</em>
                 </div>
@@ -463,17 +496,18 @@
         <div class="site-title">
             <div class="site-title-group">
                 <span>Featured</span>
-                <em><div class="site-line">
-                    <img alt="logo" class="img-responsive"
-                    src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
-                    height="27" />
-                </div>
+                <em>
+                    <div class="site-line">
+                        <img alt="logo" class="img-responsive"
+                            src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
+                            height="27" />
+                    </div>
                     Properties
-                    
+
                 </em>
             </div>
             <img alt="logo" class="img-responsive"
-            src="<?php echo get_stylesheet_directory_uri() ?>/images/title-leaf.png" width="195" height="219" />
+                src="<?php echo get_stylesheet_directory_uri() ?>/images/title-leaf.png" width="195" height="219" />
         </div>
         <div class="properties-slick">
             <a href="[blogurl]" aria-label="properties" class="properties-item">
@@ -485,10 +519,10 @@
                 <div class="properties-content">
                     <img alt="properties" class="properties-logo"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/properties-logo.png" width="321"
-                        height="370" />
+                        height="321" />
                     <em>$17,200,000</em>
                     <p>1450 Maple Valley <br> Washington 98038, USA</p>
-                     <span class="site-btn">View Details</span>
+                    <span class="site-btn">View Details</span>
                 </div>
             </a>
             <a href="[blogurl]" aria-label="properties" class="properties-item">
@@ -500,10 +534,10 @@
                 <div class="properties-content">
                     <img alt="properties" class="properties-logo"
                         src="<?php echo get_stylesheet_directory_uri() ?>/images/properties-logo.png" width="321"
-                        height="370" />
+                        height="321" />
                     <em>$17,200,000</em>
                     <p>1450 Maple Valley <br> Washington 98038, USA</p>
-                     <span class="site-btn">View Details</span>
+                    <span class="site-btn">View Details</span>
                 </div>
             </a>
             <a href="[blogurl]" aria-label="properties" class="properties-item">
@@ -518,45 +552,47 @@
                         height="321" />
                     <em>$17,200,000</em>
                     <p>1450 Maple Valley <br> Washington 98038, USA</p>
-                     <span class="site-btn">View Details</span>
+                    <span class="site-btn">View Details</span>
                 </div>
             </a>
         </div>
-       
-   
-    <div class="properties-slick-arrow">
-        <!-- <span class="ai-font-arrow-h-p prev"></span> -->
-        <a href="[blogurl]" class="site-btn" aria-label="VIEW ALL properties">VIEW ALL properties</a>
-        <span class="ai-font-arrow-h-n next"></span>
-    </div>
-</div>
 
-<div class="site-bg">
-    <canvas class="lazyload" width="1600" height="1078"
-        data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/properties-bg.jpg"></canvas>
-</div>
-<div class="site-bg accent">
-    <canvas class="lazyload" width="123" height="131"
-        data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/team-accent.png"></canvas>
-</div>
+
+        <div class="properties-slick-arrow">
+            <!-- <span class="ai-font-arrow-h-p prev"></span> -->
+            <a href="[blogurl]" class="site-btn" aria-label="VIEW ALL properties">VIEW ALL properties</a>
+            <span class="ai-font-arrow-i-n"></span>
+        </div>
+    </div>
+
+    <div class="site-bg">
+        <canvas class="lazyload" width="1600" height="1078"
+            data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/properties-bg.jpg"></canvas>
+    </div>
+    <div class="site-bg dot-accent">
+        <canvas class="lazyload" width="123" height="131"
+            data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/team-accent.png"></canvas>
+    </div>
 </section>
 <!-- properties end -->
 
 <!-- testimonials -->
 <section class="hp-testimonials">
     <div class="region-testimonials-container">
-            <div class="site-title">
-                <div class="site-title-group">
-                    <span>What Are</span>
-                    <em>Clients Says
+        <div class="site-title">
+            <div class="site-title-group">
+                <span>What Are</span>
+                <em>Clients Says
+                    <div class="site-line">
                         <img alt="logo" class="img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
-                        height="27" />
-                    </em>
-                </div>
+                            src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
+                            height="27" />
+                    </div>
+                </em>
             </div>
-        
-            <span class="testi-top"> "Helped 500+ families just like yours"</span>
+        </div>
+
+        <span class="testi-top"> "Helped 500+ families just like yours"</span>
         <div class="testimonials-slick">
             <div class="testimonials-content bg-orange">
                 <p>"We can't thank Laura enough for helping us find our dream home in Washington. It's exactly what we
@@ -578,13 +614,13 @@
                     magicians, they made all of our
                     Washington real estate dreams
                     come true. Aside from being...</p>
-                <em>JANE DOE</em>
+                <em>CLAIRE DOE</em>
                 <span class="arrow-next"></span>
             </div>
             <div class="testimonials-content">
                 <p>"We can't thank Laura enough for helping us find our dream home in Washington. It's exactly what we
                     dreamed it would be - and didn't go over our budget! Laura's local market knowledge..."</p>
-                <em>CLAIRE DOE</em>
+                <em>JANE DOE</em>
                 <span class="arrow-next"></span>
             </div>
         </div>
@@ -640,14 +676,17 @@
             <div class="site-title">
                 <div class="site-title-group">
                     <span>Latest</span>
-                    <em>News
-                        <img alt="logo" class="img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
-                        height="27" />
+                    <em>
+                        <div class="site-line">
+                            <img alt="logo" class="img-responsive"
+                                src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
+                                height="27" />
+                        </div>
+                        News
                     </em>
                 </div>
-                <img alt="logo" class="img-responsive"
-                src="<?php echo get_stylesheet_directory_uri() ?>/images/title-leaf.png" width="195" height="219" />
+                <img alt="logo" class="img-responsive mews-leaf"
+                    src="<?php echo get_stylesheet_directory_uri() ?>/images/title-leaf.png" width="195" height="219" />
             </div>
         </div>
         <div class="news-gallery-image-container">
@@ -687,20 +726,24 @@
         <div class="videos-header">
             <div class="site-title">
                 <img alt="logo" class="img-responsive"
-                src="<?php echo get_stylesheet_directory_uri() ?>/images/videos-leaf.png" width="201" height="222" />
+                    src="<?php echo get_stylesheet_directory_uri() ?>/images/videos-leaf.png" width="201"
+                    height="222" />
                 <div class="site-title-group">
                     <span>Featured</span>
                     <em>Videos
-                        <img alt="logo" class="img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
-                        height="27" />
+                        <div class="site-line">
+                            <img alt="logo" class="img-responsive"
+                                src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
+                                height="27" />
+                        </div>
                     </em>
                 </div>
             </div>
             <a href="[blogurl]" class="site-btn" aria-label="More Videos">More Videos</a>
         </div>
         <div class="videos-slick">
-            <a href="[blogurl]" aria-label="videos" class="videos-item">
+            <a href="https://www.youtube.com/watch?v=mSgTCmR5aPQ" aria-label="videos"
+                class="aios-video-popup videos-item">
                 <div class="videos-img canvas-wrapper">
                     <canvas width="969" height="545"></canvas>
                     <img alt="videos" class="img-videos canvas-img img-responsive"
@@ -708,7 +751,8 @@
                 </div>
                 <span class="site-play-btn ai-font-play-button-a"></span>
             </a>
-            <a href="[blogurl]" aria-label="videos" class="videos-item">
+            <a href="https://www.youtube.com/watch?v=mSgTCmR5aPQ" aria-label="videos"
+                class="aios-video-popup videos-item">
                 <div class="videos-img canvas-wrapper">
                     <canvas width="969" height="545"></canvas>
                     <img alt="videos" class="img-videos canvas-img img-responsive"
@@ -716,7 +760,8 @@
                 </div>
                 <span class="site-play-btn ai-font-play-button-a"></span>
             </a>
-            <a href="[blogurl]" aria-label="videos" class="videos-item">
+            <a href="https://www.youtube.com/watch?v=mSgTCmR5aPQ" aria-label="videos"
+                class="aios-video-popup videos-item">
                 <div class="videos-img canvas-wrapper">
                     <canvas width="969" height="545"></canvas>
                     <img alt="videos" class="img-videos canvas-img img-responsive"
@@ -748,14 +793,15 @@
             <div class="site-title">
                 <div class="site-title-group">
                     <span>Follow Us On</span>
-                    <em>Social Media
-                        <img alt="logo" class="img-responsive"
-                        src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
-                        height="27" />
+                    <em> <img alt="logo" class="img-responsive"
+                            src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
+                            height="27" />Social Media
+
                     </em>
                 </div>
                 <img alt="logo" class="img-responsive"
-                src="<?php echo get_stylesheet_directory_uri() ?>/images/welcome-leaf.png" width="168" height="197" />
+                    src="<?php echo get_stylesheet_directory_uri() ?>/images/welcome-leaf.png" width="168"
+                    height="197" />
             </div>
         </div>
         <div class="social-gallery-image-container">
@@ -813,15 +859,21 @@
             <div class="site-title-group">
                 <span>Connect</span>
                 <em>With Us
-                    <img alt="logo" class="img-responsive"
-                    src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
-                    height="27" />
+                    <div class="site-line">
+                        <img alt="logo" class="img-responsive"
+                            src="<?php echo get_stylesheet_directory_uri() ?>/images/line-logo.png" width="27"
+                            height="27" />
+                    </div>
                 </em>
             </div>
         </div>
         <div class="contact-form ">
             <?php echo do_shortcode('[contact-form-7 html_class="use-floating-validation-tip" id="34" title="hp template form 2"]')?>
         </div>
+    </div>
+    <div class="site-bg site-bg-rgba">
+        <canvas class="lazyload" width="1600" height="779"
+            data-bgset="<?php echo get_stylesheet_directory_uri(); ?>/images/contact-bg.jpg"></canvas>
     </div>
 </section>
 <!-- contact end -->

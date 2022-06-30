@@ -141,7 +141,7 @@ function ai_starter_theme_enqueue_child_assets()  {
 	wp_enqueue_style('fonts-Roboto','https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
 	// asasasas
 	wp_enqueue_style('fonts-Merriweather','https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-	wp_enqueue_style('fonts-Source Sans Pro','https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+	wp_enqueue_style('fonts-Source-Sans-Pro','https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
 	
 	/* Enqueue my scripts */
 	wp_enqueue_script('aios-starter-theme-child-script', get_stylesheet_directory_uri(). '/js/scripts.js');

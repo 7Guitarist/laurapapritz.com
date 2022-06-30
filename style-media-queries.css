@@ -26,7 +26,7 @@
     grid-column: 1/57;
   }
   .welcome-secondary-section {
-    grid-column: 62/-2
+    grid-column: 62/-2;
   }
 
   /*#endregion Welcome Region */
@@ -90,7 +90,7 @@
     grid-template-columns: repeat(5, 1fr);
     max-width: 1250px;
     grid-row-gap: 0px;
-    grid-column-gap: 10px;
+    grid-column-gap: 13px;
     margin: 0 auto;
   }
 
@@ -110,7 +110,13 @@
   /* 1367 */
   .hp-welcome .welcome-secondary-section em {
     font-size: 25px;
-}
+  }
+  .hp-team .team-content-hover .site-btn {
+    width: 100%;
+  }
+  .hp-team .team-content-hover {
+    width: 100%;
+  }
   /*#region Global */
   /*#endregion Global */
 
@@ -169,10 +175,24 @@
 }
 
 @media only screen and (max-width: 1366px) {
- /* 1200 */
- .hp-welcome .welcome-secondary-section em {
-  font-size: 21px;
-}
+  /* 1200 */
+  .hp-welcome .welcome-secondary-section em {
+    font-size: 21px;
+  }
+
+  /* Team */
+  .hp-team .team-content em {
+    font-size: 20px;
+  }
+  .hp-team .team-content-hover > em {
+    font-size: 20px;
+  }
+  .hp-team .team-content span {
+    font-size: 12px;
+  }
+  .hp-team .team-content-hover > span {
+    font-size: 12px;
+  }
   /*#region Global */
   /*#endregion Global */
 
@@ -205,7 +225,12 @@
   /*#endregion Testimonial Region */
 
   /*#region Cta Region */
-
+  .cta-item.canvas-wrapper::after {
+    width: 350px;
+  }
+  .cta-item.canvas-wrapper em {
+    font-size: 55px;
+  }
   /*#endregion Cta Region */
 
   /*#region News Region */
@@ -231,22 +256,43 @@
 }
 
 @media only screen and (max-width: 1199px) {
- /* 992 */
- .hp-welcome .welcome-secondary-section em{
-  font-size: 17px;
-  display: flex;
-  justify-content: center;
- }
- .hp-welcome .site-bg.bg-green canvas {
-  bottom: 15px;
-  height: 615px;
-}
-.hp-welcome .welcome-secondary-section {
-  padding-top: 90px;
-}
-.hp-welcome .welcome-content p {
-  font-size: 18px;
-}
+  /* 992 */
+  .hp-welcome .welcome-secondary-section em {
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+  }
+  .hp-welcome .site-bg.bg-green canvas {
+    bottom: 0;
+    height: 615px;
+  }
+  .hp-welcome .welcome-secondary-section {
+    padding-top: 90px;
+  }
+  .hp-welcome .welcome-content p {
+    font-size: 18px;
+  }
+
+  .welcome-primary-section {
+    grid-column: 1/52;
+  }
+  .welcome-secondary-section {
+    grid-column: 56/-2;
+  }
+
+  /* Team */
+  .hp-team .team-content em {
+    font-size: 18px;
+  }
+  .hp-team .team-content-hover > em {
+    font-size: 18px;
+  }
+  .hp-team .team-content span {
+    font-size: 12px;
+  }
+  .hp-team .team-content-hover > span {
+    font-size: 12px;
+  }
   /*#region Global */
   /*#endregion Global */
 
@@ -311,6 +357,10 @@
     overflow: auto;
   }
 
+  .site-title .site-title-group em {
+    font-size: 65px;
+  }
+
   #pojo-a11y-toolbar .pojo-a11y-toolbar-toggle a {
     display: none !important;
   }
@@ -324,13 +374,25 @@
     display: none;
   }
   /* Welcome Content */
+  .hp-welcome {
+    padding: 50px 15px;
+  }
+
   .hp-welcome .site-bg-grayscale canvas {
-    background-size: cover; 
+    background-size: cover;
+  }
+
+  .hp-welcome .site-title {
+    gap: 19px;
+  }
+  .hp-welcome .site-title-group {
+    margin: 0;
   }
   .hp-welcome .site-title img {
     max-width: 80px;
+    align-self: center;
   }
-  .hp-welcome .welcome-primary-section img{
+  .hp-welcome .welcome-primary-section img {
     margin: 0 auto;
   }
   .hp-welcome .site-bg.bg-green {
@@ -341,12 +403,17 @@
     margin: 0 auto 42px;
     text-align: center;
   }
-  .hp-welcome .welcome-secondary-section{
+  .hp-welcome .welcome-secondary-section {
     padding: 0;
   }
   .hp-welcome .welcome-group {
     justify-content: center;
-}
+  }
+  /* Cta Content */
+  .cta-gallery-image-container {
+    display: flex;
+    flex-direction: column;
+  }
   /*#region Header */
 
   header.header {
@@ -367,6 +434,10 @@
   /*#endregion Header */
 
   /*#region Contact */
+  .hp-contact .site-title {
+    display: grid;
+    justify-content: center;
+  }
 
   .contact-form .form-md {
     width: 100%;
@@ -384,6 +455,17 @@
   .aios-mobile-header-wrapper {
     z-index: 1020 !important;
   }
+  /*#region testimonials */
+  .hp-testimonials .site-title-group {
+    margin-bottom: 50px;
+  }
+  .hp-testimonials .testimonials-slick {
+    padding-top: 50px;
+  }
+  .hp-testimonials .testi-top {
+    font-size: 34px;
+  }
+  /*#endregion testimonials  */
 
   .inner {
     width: 100%;
@@ -405,6 +487,49 @@
 
 @media only screen and (max-width: 767px) {
   /* 481 */
+  .site-title .site-title-group span {
+    font-size: 17px;
+  }
+  .site-title .site-title-group em {
+    font-size: 35px;
+  }
+  /* #region testimonials */
+  .hp-testimonials .testi-top {
+    font-size: 23px;
+    padding-left: 0;
+  }
+  .hp-testimonials .site-title-group {
+    margin-bottom: 30px;
+  }
+  .hp-testimonials .site-title {
+    padding-left: 20px;
+  }
+  .hp-testimonials .site-title-group em {
+    gap: 20px;
+  }
+  .slick-dots {
+    position: absolute;
+    top: initial;
+    right: initial;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hp-testimonials .testimonials-slick {
+    padding-top: 20px;
+  }
+
+  /* #endregion testimonials */
+
+  /* Contact */
+  .hp-contact .site-title .site-title-group em {
+    font-size: 65px;
+  }
+
+  .hp-contact .site-title .site-title-group span {
+    font-size: 22px;
+  }
+  /* Welcome */
+
   .ip-banner .container {
     width: 100%;
   }
@@ -414,8 +539,41 @@
 
 @media only screen and (max-width: 480px) {
   /*#region Global */
-  /*#endregion Global */
+  .hp-welcome .site-title img {
+    max-width: 50px;
+  }
+  .hp-welcome .site-title {
+    gap: 10px;
+  }
 
+  .site-title .site-title-group span {
+    font-size: 12px;
+  }
+  .site-title .site-title-group em {
+    font-size: 25px;
+  }
+  /*#endregion Global */
+  /*#region testimonials */
+    .hp-testimonials .site-title {
+      padding-left: 0px;
+  }
+  .hp-testimonials .site-title-group {
+    margin-bottom: 20px;
+  }
+  .hp-testimonials .testi-top {
+    font-size: 20px;
+  }
+  /*#endregion testimonials */
+
+  /* Contact */
+  .hp-contact .site-title .site-title-group span {
+    font-size: 16px;
+  }
+
+  .hp-contact .site-title .site-title-group em {
+    font-size: 45px;
+    gap: 19px;
+  }
   /*#region Footer */
   /*#endregion Footer */
   /*#region Fixed smi */
